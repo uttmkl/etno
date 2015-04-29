@@ -1,0 +1,95 @@
+@import "compass/css3";
+@import "compass/support";
+
+.container-inner {
+  position: relative;
+  margin: 0 auto;
+  max-width: 950px;
+  height: 100%;
+}
+
+#page {
+  max-width: 100%;
+  background: url("../images/container-bg.gif");
+   #navigation {
+      top: -46px;
+      background: url("../images/mainnav-bg.png");
+      height: 46px;
+      position: absolute;
+      bottom: 0;
+      z-index: 9;
+      width: 100%;
+     .container-inner {
+       ul {
+         &.inline {
+           display: inline-block;
+         }
+         margin: 0 0 0 5px;
+         padding: 0 0 0 2px;
+         position: relative;
+         background: url("../images/mainnav-sep.gif") no-repeat left 3px;
+         li {
+           padding: 0 2px 0 0;
+           margin: 0;
+           background: url("../images/mainnav-sep.gif") no-repeat 100% 3px;
+           &.active {
+             a {
+               background: url("../images/mainnav-active-bg.gif") no-repeat center top;
+             }
+           }
+           a {
+             line-height: 46px;
+             text-decoration: none;
+             color: #F8B150;
+             padding: 0 20px;
+             font-family: Georgia, "Times New Roman", Times, serif;
+             display: block;
+             font-variant: small-caps;
+           }
+           &:hover {
+             a {
+               background: url("../images/mainnav-hover.gif") no-repeat center 3px;
+               color: #DCCAC0;
+             }
+           }
+         }
+       }
+     }
+  }
+  #main {
+    padding: 0;
+    .column {
+      max-width: 950px;
+      padding: 10px 6px 0;
+      margin: 0 auto;
+      background: url("../images/content-bg.png") repeat-y center;
+      .content-container {
+        width: 54.9%;
+        padding: 10px 20px;
+        @include box-sizing(border-box);
+      }
+    }
+  }
+}
+
+p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #DCCAC0;
+  font-family: "Lucida Grande", Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  color: #DCCAC0;
+  line-height: normal;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 24px;
+}
