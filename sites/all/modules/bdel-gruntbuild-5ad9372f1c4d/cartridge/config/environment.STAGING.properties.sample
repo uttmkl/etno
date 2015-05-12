@@ -1,0 +1,7 @@
+webdav.username=admin
+webdav.password=mytopsecretpassword
+webdav.server=staging.web.demandware.net
+webdav.cartridge.root=/on/demandware.servlet/webdav/Sites/Cartridges/
+webdav.impex.root=/on/demandware.servlet/webdav/Sites/ImpEx/
+webdav.p12.path=config/mystagingcert.p12
+webdav.p12.password=mycertpasswd12345
