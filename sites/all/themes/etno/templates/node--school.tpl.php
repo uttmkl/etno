@@ -38,13 +38,17 @@
     print render($content);
   ?>
 
-  <?php if (isset($content['field_instructor']['#items'])): ?>
+  <?php $relatedNodes = getRelatedNodes($nid); ?>
+
+  <?php if ($relatedNodes['instructor']): ?>
     <div class="schools-wrapper">
-      <?php $instructors_nids = ''; ?>
-      <?php foreach($content['field_instructor']['#items'] as $instructor): ?>
-        <?php $instructors_nids .= $instructor['nid'] . ','; ?>
-      <?php endforeach; ?>
-      <?php print views_embed_view('instructors','instructors_schools_block', substr($instructors_nids, 0 , -1)); ?>
+      <?php print views_embed_view('instructors','instructors_schools_block', substr($relatedNodes['instructor'], 0, -1)); ?>
+    </div>
+  <?php endif; ?>
+
+  <?php if ($relatedNodes['news']): ?>
+    <div class="news-wrapper">
+      <?php print views_embed_view('news','news_block', substr($relatedNodes['news'], 0, -1)); ?>
     </div>
   <?php endif; ?>
 

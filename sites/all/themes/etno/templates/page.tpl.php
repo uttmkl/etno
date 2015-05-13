@@ -8,7 +8,7 @@
  */
 ?>
 
-<div id="page">
+<div id="page" data-schoolid="<?php print getSchoolByEditor($user->uid); ?>">
 
   <header class="header" id="header" role="banner">
       <div class="container-inner">
