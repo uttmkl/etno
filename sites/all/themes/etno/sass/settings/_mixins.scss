@@ -1,0 +1,95 @@
+// @file
+// Custom sass mixins
+//
+// Define the custom mixins for your project here.
+// http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#defining_a_mixin
+
+// Makes an element visually hidden, but accessible.
+// @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    clip: rect(1px 1px 1px 1px); // IE6 and IE7 use the wrong syntax.
+  }
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Turns off the element-invisible effect.
+@mixin element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+// Makes an element visually hidden by default, but visible when focused.
+@mixin element-focusable {
+  @include element-invisible;
+
+  &:active,
+  &:focus {
+    @include element-invisible-off;
+  }
+}
+
+@mixin media($media) {
+  @if $media == small {
+    @media only screen and (max-width: $small-breakpoint) { @content; }
+  }
+  @else if $media == medium {
+    @media only screen and (max-width: $medium-breakpoint) { @content; }
+  }
+  @else if $media == large {
+    @media only screen and (max-width: $large-breakpoint) and (min-width: $medium-breakpoint + 1) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (max-width: $tablet-breakpoint) and (min-width: $medium-breakpoint) { @content; }
+  }
+}
+
+@mixin button() {
+  background-color: #71470e;
+  @include background-image(
+          image-url("../images/btn-bg.png"),
+          linear-gradient(to bottom, #662502, #71470e)
+  );
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: $btn_color;
+  border: 1px solid #4a2e1d;
+  padding: 0 10px 0 35px;
+  line-height: 22px;
+  @include border-radius(3px);
+
+  &:hover {
+    @include background-image(
+            image-url("../images/btn-bg.png"),
+            linear-gradient(to bottom, #71470e, #662502)
+    );
+  }
+}
+
+@mixin link() {
+  color: $link_color;
+
+  &:hover {
+    color: $main_color;
+    text-decoration: underline;
+  }
+}
+
+@mixin form-input() {
+  background: $border_color;
+  border: #662502;
+}
+
+@mixin form-label() {
+
+}
+@mixin fieldset() {
+  border-color: $border_color;
+}

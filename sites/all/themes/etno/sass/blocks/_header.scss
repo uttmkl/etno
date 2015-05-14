@@ -8,8 +8,8 @@
       width: 499px;
       height: 247px;
       position: absolute;
-      bottom: 0px;
-      right: 0px;
+      bottom: 0;
+      right: 0;
     }
     .header__logo {
       position: relative;
@@ -28,11 +28,9 @@
         a {
           text-decoration: none;
           font-variant: small-caps;
-          color: #F8B150;
           padding: 80px 0 5px 0;
           line-height: normal;
           font-weight: normal;
-          font-family: Georgia, Cambria, "Times New Roman", Times, serif;
           font-size: 36px;
           outline: none;
         }
