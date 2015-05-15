@@ -4,13 +4,14 @@
 .container-inner {
   position: relative;
   margin: 0 auto;
-  max-width: 950px;
+  max-width: 1200px;
   height: 100%;
 }
 
 #page {
   max-width: 100%;
   background: url("../images/container-bg.gif");
+  padding-bottom: 15px;
    #navigation {
       top: -46px;
       background: url("../images/mainnav-bg.png");
@@ -19,6 +20,9 @@
       bottom: 0;
       z-index: 9;
       width: 100%;
+     .main-menu {
+       outline: none;
+     }
      .container-inner {
        ul {
          &.inline {
@@ -32,11 +36,6 @@
            padding: 0 2px 0 0;
            margin: 0;
            background: url("../images/mainnav-sep.gif") no-repeat 100% 3px;
-           &.active {
-             a {
-               background: url("../images/mainnav-active-bg.gif") no-repeat center top;
-             }
-           }
            a {
              line-height: 46px;
              text-decoration: none;
@@ -45,11 +44,24 @@
              font-family: Georgia, "Times New Roman", Times, serif;
              display: block;
              font-variant: small-caps;
+             @include transition(all 0.5s ease);
+             background: none;
+             background-position: center 3px;
+             background-repeat: no-repeat;
            }
            &:hover {
              a {
                background: url("../images/mainnav-hover.gif") no-repeat center 3px;
                color: #DCCAC0;
+
+             }
+           }
+           &.active {
+             a {
+               background: url("../images/mainnav-active-bg.gif") repeat-x center 1px;
+               &:hover {
+                 background: url("../images/mainnav-active-bg.gif") repeat-x center 1px;
+               }
              }
            }
          }
@@ -59,16 +71,35 @@
   #main {
     padding: 0;
     .column {
-      max-width: 950px;
+      max-width: 1200px;
       padding: 10px 6px 0;
       margin: 0 auto;
-      background: url("../images/content-bg.png") repeat-y center;
+      background: url("../images/content-bg1200.png") repeat-y center;
       .content-container {
         width: 54.9%;
-        padding: 10px 20px;
+        padding: 10px 40px 10px 40px;
+
         @include box-sizing(border-box);
       }
     }
+  }
+}
+
+#footer {
+  background: url(../images/botslwrap-bg.gif);
+  clear: both;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #2F190C;
+  min-height: 236px;
+  padding: 0;
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    height: 100%;
+    background: url(../images/botsl-bg1200.png) no-repeat top center;
+    min-height: 195px;
   }
 }
 
@@ -92,4 +123,28 @@ h1 {
 
 h2 {
   font-size: 24px;
+}
+
+body {
+  &.not-logged-in {
+    #page {
+      #content {
+        float: none;
+      }
+      .sidebars {
+        .region-sidebar-first {
+          float: none;
+          .block.block-user {
+            .form-actions {
+              padding-bottom: 30px;
+            }
+          }
+        }
+      }
+      #footer {
+        top: -24px;
+        position: relative;
+      }
+    }
+  }
 }

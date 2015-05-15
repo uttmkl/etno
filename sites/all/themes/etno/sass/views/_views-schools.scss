@@ -1,0 +1,72 @@
+.view {
+  &.view-schools {
+    .view-content {
+      ul {
+        padding-left: 0;
+        li {
+          list-style: none;
+          margin-bottom: 35px;
+          margin-top: 20px;
+          clear: both;
+          padding-bottom: 60px;
+          border-bottom: 1px solid rgba(255,255,255,0.07);
+          &:last-of-type {
+            border-bottom: none;
+          }
+        }
+      }
+      .views-field-title {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        a {
+          @include transition(all 0.5s ease);
+          text-decoration: none;
+          color: #F8B150;
+          border-bottom: 1px solid #F8B150;
+          &:hover{
+            border-bottom: 1px solid #DCCAC0;
+            color: #DCCAC0;
+          }
+        }
+      }
+      .views-field-field-logo {
+        margin-right: 20px;
+        float: left;
+      }
+      .views-field-body {
+        p{
+          margin-top: -4px;
+        }
+      }
+      .views-field-field-styles {
+        float: left;
+        margin-right: 50px;
+        color: #DCCAC0;
+        a {
+          @include transition(all 0.5s ease);
+          text-decoration: none;
+          color: #F8B150;
+          border-bottom: 1px solid #F8B150;
+          &:hover{
+            border-bottom: 1px solid #DCCAC0;
+            color: #DCCAC0;
+          }
+        }
+      }
+      .views-field-field-city {
+        float: left;
+        color: #DCCAC0;
+        a {
+          @include transition(all 0.5s ease);
+          text-decoration: none;
+          color: #F8B150;
+          border-bottom: 1px solid #F8B150;
+          &:hover{
+            border-bottom: 1px solid #DCCAC0;
+            color: #DCCAC0;
+          }
+        }
+      }
+    }
+  }
+}
