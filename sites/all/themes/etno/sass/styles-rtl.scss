@@ -4,13 +4,13 @@
  */
 
 /* Import Sass mixins, variables, Compass modules, etc. */
-@import "init";
+@import "settings/init";
 
 /* HTML element (SMACSS base) rules */
-@import "normalize-rtl";
+@import "components/normalize-rtl";
 
 /* Layout rules */
-@import "layouts/responsive-rtl";
+@import "components/responsive-rtl";
 
 /* Component (SMACSS module) rules */
 @import "components/misc-rtl";

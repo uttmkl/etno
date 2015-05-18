@@ -1,5 +1,50 @@
-@import "compass/css3";
-@import "compass/support";
+@import "blocks/header";
+@import "blocks/footer";
+
+body {
+  color: $main_color;
+}
+
+::selection {
+  background: $selection;
+}
+::-moz-selection {
+  background: $selection;
+}
+
+a {
+  @include link();
+}
+
+button, .button, .form-submit {
+  @include button();
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $header-font;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+fieldset {
+  @include fieldset();
+}
+
+.form-text, .form-textarea {
+  @include form-input();
+}
 
 .container-inner {
   position: relative;
@@ -39,7 +84,6 @@
            a {
              line-height: 46px;
              text-decoration: none;
-             color: #F8B150;
              padding: 0 20px;
              font-family: Georgia, "Times New Roman", Times, serif;
              display: block;
@@ -147,4 +191,4 @@ body {
       }
     }
   }
-}
+}}
