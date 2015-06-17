@@ -131,6 +131,11 @@ function etno_preprocess_block(&$variables, $hook) {
 }
 // */
 
+function etno_preprocess_page(&$variables) {
+  drupal_add_library('system', 'ui');
+  drupal_add_library('system', 'ui.tabs');
+}
+
 function getInstructorsOfSchool($schoolNid) {
   $instructorsNids = '';
 

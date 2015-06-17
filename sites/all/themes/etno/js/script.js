@@ -16,9 +16,10 @@
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.etno = {
   attach: function(context, settings) {
+    $(".tabs-ui").tabs();
 
     // Place your code here.
-    if ($('form.node-instructor-form, form.node-news-form').size() > 0) {
+    if ($('form.node-instructor-form, form.node-news-form, form.node-photos-form, form.node-video-form').size() > 0) {
       setSchool();
     }
 

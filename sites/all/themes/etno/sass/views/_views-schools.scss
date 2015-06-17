@@ -1,20 +1,7 @@
 .view {
   &.view-schools {
     .view-content {
-      ul {
-        padding-left: 0;
-        li {
-          list-style: none;
-          margin-bottom: 35px;
-          margin-top: 20px;
-          clear: both;
-          padding-bottom: 60px;
-          border-bottom: 1px solid rgba(255,255,255,0.07);
-          &:last-of-type {
-            border-bottom: none;
-          }
-        }
-      }
+
       .views-field-title {
         margin-top: 15px;
         margin-bottom: 15px;

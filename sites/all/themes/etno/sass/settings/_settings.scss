@@ -36,6 +36,8 @@ $header-font:      $times;
 //
 // Colors, etc.
 //
+$bg: #371e10;
+$sidebar_bg: #3f271a;
 $main_color: #DCCAC0;
 $link_color: #F8B150;
 $btn_color: $main_color;
@@ -57,3 +59,4 @@ $small-breakpoint: 480px;
 $medium-breakpoint: 767px;
 $large-breakpoint: 1024px;
 $tablet-breakpoint: 1003px;
+$max-width: 1200px;

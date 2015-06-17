@@ -777,16 +777,16 @@ table {
   /* line 166, ../sass/components/_responsive.scss */
   .sidebar-first #content {
     float: left;
-    width: 80%;
+    width: 60%;
     margin-left: 20%;
-    margin-right: -100%;
+    margin-right: -80%;
   }
   /* line 171, ../sass/components/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
-    width: 20%;
+    width: 40%;
     margin-left: 0%;
-    margin-right: -20%;
+    margin-right: -40%;
   }
 
   /**
@@ -1823,29 +1823,12 @@ tr.selected td {
   outline: none;
 }
 
-/* line 4, ../sass/views/_views-schools.scss */
-.view.view-schools .view-content ul {
-  padding-left: 0;
-}
-/* line 6, ../sass/views/_views-schools.scss */
-.view.view-schools .view-content ul li {
-  list-style: none;
-  margin-bottom: 35px;
-  margin-top: 20px;
-  clear: both;
-  padding-bottom: 60px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-}
-/* line 13, ../sass/views/_views-schools.scss */
-.view.view-schools .view-content ul li:last-of-type {
-  border-bottom: none;
-}
-/* line 18, ../sass/views/_views-schools.scss */
+/* line 5, ../sass/views/_views-schools.scss */
 .view.view-schools .view-content .views-field-title {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 21, ../sass/views/_views-schools.scss */
+/* line 8, ../sass/views/_views-schools.scss */
 .view.view-schools .view-content .views-field-title a {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -1855,27 +1838,27 @@ tr.selected td {
   color: #F8B150;
   border-bottom: 1px solid #F8B150;
 }
-/* line 26, ../sass/views/_views-schools.scss */
+/* line 13, ../sass/views/_views-schools.scss */
 .view.view-schools .view-content .views-field-title a:hover {
   border-bottom: 1px solid #DCCAC0;
   color: #DCCAC0;
 }
-/* line 32, ../sass/views/_views-schools.scss */
+/* line 19, ../sass/views/_views-schools.scss */
 .view.view-schools .view-content .views-field-field-logo {
   margin-right: 20px;
   float: left;
 }
-/* line 37, ../sass/views/_views-schools.scss */
+/* line 24, ../sass/views/_views-schools.scss */
 .view.view-schools .view-content .views-field-body p {
   margin-top: -4px;
 }
-/* line 41, ../sass/views/_views-schools.scss */
+/* line 28, ../sass/views/_views-schools.scss */
 .view.view-schools .view-content .views-field-field-styles {
   float: left;
   margin-right: 50px;
   color: #DCCAC0;
 }
-/* line 45, ../sass/views/_views-schools.scss */
+/* line 32, ../sass/views/_views-schools.scss */
 .view.view-schools .view-content .views-field-field-styles a {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -1885,17 +1868,17 @@ tr.selected td {
   color: #F8B150;
   border-bottom: 1px solid #F8B150;
 }
-/* line 50, ../sass/views/_views-schools.scss */
+/* line 37, ../sass/views/_views-schools.scss */
 .view.view-schools .view-content .views-field-field-styles a:hover {
   border-bottom: 1px solid #DCCAC0;
   color: #DCCAC0;
 }
-/* line 56, ../sass/views/_views-schools.scss */
+/* line 43, ../sass/views/_views-schools.scss */
 .view.view-schools .view-content .views-field-field-city {
   float: left;
   color: #DCCAC0;
 }
-/* line 59, ../sass/views/_views-schools.scss */
+/* line 46, ../sass/views/_views-schools.scss */
 .view.view-schools .view-content .views-field-field-city a {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -1905,7 +1888,7 @@ tr.selected td {
   color: #F8B150;
   border-bottom: 1px solid #F8B150;
 }
-/* line 64, ../sass/views/_views-schools.scss */
+/* line 51, ../sass/views/_views-schools.scss */
 .view.view-schools .view-content .views-field-field-city a:hover {
   border-bottom: 1px solid #DCCAC0;
   color: #DCCAC0;
@@ -2012,10 +1995,10 @@ fieldset {
 }
 /* line 61, ../sass/_layout.scss */
 #page #navigation {
-  top: -46px;
+  margin-top: -46px;
   background: url("../images/mainnav-bg.png");
   height: 46px;
-  position: absolute;
+  position: relative;
   bottom: 0;
   z-index: 9;
   width: 100%;
@@ -2072,25 +2055,32 @@ fieldset {
 }
 /* line 116, ../sass/_layout.scss */
 #page #main {
-  padding: 0;
-}
-/* line 118, ../sass/_layout.scss */
-#page #main .column {
   max-width: 1200px;
-  padding: 10px 6px 0;
+  padding: 0;
   margin: 0 auto;
-  background: url("../images/content-bg1200.png") repeat-y center;
 }
-/* line 123, ../sass/_layout.scss */
+/* line 121, ../sass/_layout.scss */
+#page #main .column {
+  padding: 10px 20px;
+  margin: 0 auto;
+  background: #371e10;
+}
+/* line 126, ../sass/_layout.scss */
+#page #main .column.column-main {
+  padding: 10px 30px;
+}
+/* line 130, ../sass/_layout.scss */
+#page #main .column.sidebar {
+  background: #3f271a;
+}
+/* line 134, ../sass/_layout.scss */
 #page #main .column .content-container {
-  width: 54.9%;
-  padding: 10px 40px 10px 40px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 133, ../sass/_layout.scss */
+/* line 141, ../sass/_layout.scss */
 #footer {
   background: url(../images/botslwrap-bg.gif);
   clear: both;
@@ -2100,7 +2090,7 @@ fieldset {
   min-height: 236px;
   padding: 0;
 }
-/* line 141, ../sass/_layout.scss */
+/* line 149, ../sass/_layout.scss */
 #footer .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -2110,46 +2100,4 @@ fieldset {
   min-height: 195px;
 }
 
-/* line 151, ../sass/_layout.scss */
-p {
-  font-size: 12px;
-  line-height: 18px;
-  color: #DCCAC0;
-  font-family: "Lucida Grande", Arial, sans-serif;
-}
-
-/* line 158, ../sass/_layout.scss */
-h1, h2, h3, h4 {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  color: #DCCAC0;
-  line-height: normal;
-  font-weight: normal;
-}
-
-/* line 165, ../sass/_layout.scss */
-h1 {
-  font-size: 24px;
-}
-
-/* line 169, ../sass/_layout.scss */
-h2 {
-  font-size: 24px;
-}
-
-/* line 176, ../sass/_layout.scss */
-body.not-logged-in #page #content {
-  float: none;
-}
-/* line 180, ../sass/_layout.scss */
-body.not-logged-in #page .sidebars .region-sidebar-first {
-  float: none;
-}
-/* line 183, ../sass/_layout.scss */
-body.not-logged-in #page .sidebars .region-sidebar-first .block.block-user .form-actions {
-  padding-bottom: 30px;
-}
-/* line 189, ../sass/_layout.scss */
-body.not-logged-in #page #footer {
-  top: -24px;
-  position: relative;
-}
+/*@ sourceMappingURL=styles.css.map */

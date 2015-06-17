@@ -50,7 +50,7 @@ fieldset {
 .container-inner {
   position: relative;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: $max-width;
   height: 100%;
 }
 
@@ -59,10 +59,10 @@ fieldset {
   background: url("../images/container-bg.gif");
   padding-bottom: 15px;
    #navigation {
-      top: -46px;
+      margin-top: -46px;
       background: url("../images/mainnav-bg.png");
       height: 46px;
-      position: absolute;
+      position: relative;
       bottom: 0;
       z-index: 9;
       width: 100%;
@@ -114,16 +114,24 @@ fieldset {
      }
   }
   #main {
+    max-width: $max-width;
     padding: 0;
-    .column {
-      max-width: 1200px;
-      padding: 10px 6px 0;
-      margin: 0 auto;
-      background: url("../images/content-bg1200.png") repeat-y center;
-      .content-container {
-        width: 54.9%;
-        padding: 10px 40px 10px 40px;
+    margin: 0 auto;
 
+    .column {
+      padding: 10px 20px;
+      margin: 0 auto;
+      background: $bg;
+
+      &.column-main {
+        padding: 10px 30px;
+      }
+
+      &.sidebar {
+        background: $sidebar_bg;
+      }
+
+      .content-container {
         @include box-sizing(border-box);
       }
     }
@@ -139,57 +147,11 @@ fieldset {
   min-height: 236px;
   padding: 0;
   .wrapper {
-    max-width: 1200px;
+    max-width: $max-width;
     margin: 0 auto;
     padding: 20px 0;
     height: 100%;
     background: url(../images/botsl-bg1200.png) no-repeat top center;
     min-height: 195px;
-  }
-}
-
-p {
-  font-size: 12px;
-  line-height: 18px;
-  color: #DCCAC0;
-  font-family: "Lucida Grande", Arial, sans-serif;
-}
-
-h1, h2, h3, h4 {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  color: #DCCAC0;
-  line-height: normal;
-  font-weight: normal;
-}
-
-h1 {
-  font-size: 24px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-body {
-  &.not-logged-in {
-    #page {
-      #content {
-        float: none;
-      }
-      .sidebars {
-        .region-sidebar-first {
-          float: none;
-          .block.block-user {
-            .form-actions {
-              padding-bottom: 30px;
-            }
-          }
-        }
-      }
-      #footer {
-        top: -24px;
-        position: relative;
-      }
-    }
   }
 }
