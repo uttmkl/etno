@@ -1119,7 +1119,7 @@ table {
   padding: 0 2px;
   white-space: nowrap;
 }
-/* line 118, ../sass/settings/_mixins.scss */
+/* line 150, ../sass/settings/_mixins.scss */
 .tabs-primary:before, .tabs-secondary:before, .tabs-primary:after, .tabs-secondary:after {
   content: " ";
   visibility: hidden;
@@ -2349,25 +2349,30 @@ fieldset {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
 }
 /* line 112, ../sass/pages/_school.scss */
+.school-page .view-news .views-more-link {
+  margin: -15px 0 10px;
+  display: block;
+}
+/* line 117, ../sass/pages/_school.scss */
 .school-page .view-news .views-field-created {
   font-size: 10px;
   color: #ccc;
 }
-/* line 119, ../sass/pages/_school.scss */
+/* line 124, ../sass/pages/_school.scss */
 .school-page .pane-photo-panel-pane-2 {
   clear: both;
 }
-/* line 122, ../sass/pages/_school.scss */
+/* line 127, ../sass/pages/_school.scss */
 .school-page .pane-photo-panel-pane-2 .views-row {
   float: left;
   position: relative;
   margin: 0 50px 20px 0;
 }
-/* line 127, ../sass/pages/_school.scss */
+/* line 132, ../sass/pages/_school.scss */
 .school-page .pane-photo-panel-pane-2 .views-row:nth-child(even) {
   margin-right: 0;
 }
-/* line 131, ../sass/pages/_school.scss */
+/* line 136, ../sass/pages/_school.scss */
 .school-page .pane-photo-panel-pane-2 .views-row img {
   padding: 3px;
   background: #4F2F1D;
@@ -2375,11 +2380,11 @@ fieldset {
   vertical-align: middle;
   border: 1px solid #7a5745;
 }
-/* line 139, ../sass/pages/_school.scss */
+/* line 144, ../sass/pages/_school.scss */
 .school-page .pane-video-panel-pane-2 {
   clear: both;
 }
-/* line 142, ../sass/pages/_school.scss */
+/* line 147, ../sass/pages/_school.scss */
 .school-page .pane-video-panel-pane-2 .views-row {
   float: left;
   width: 50%;
@@ -2388,28 +2393,41 @@ fieldset {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 148, ../sass/pages/_school.scss */
+/* line 153, ../sass/pages/_school.scss */
 .school-page .pane-video-panel-pane-2 .views-row:nth-child(even) {
   padding-right: 0;
 }
-/* line 154, ../sass/pages/_school.scss */
+/* line 159, ../sass/pages/_school.scss */
 .school-page .pane-video-panel-pane-2 .views-field-field-video .colorbox {
   position: relative;
   display: block;
   margin-bottom: 5px;
+  width: 278px;
 }
-/* line 159, ../sass/pages/_school.scss */
+/* line 110, ../sass/settings/_mixins.scss */
 .school-page .pane-video-panel-pane-2 .views-field-field-video .colorbox:after {
   content: '';
   display: block;
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 278px;
-  height: 208px;
+  top: 50%;
+  left: 50%;
+  margin: -40px 0 0 -40px;
+  width: 80px;
+  height: 80px;
   background: url(../images/play.png) no-repeat center;
+  background-size: contain;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
 }
-/* line 170, ../sass/pages/_school.scss */
+/* line 125, ../sass/settings/_mixins.scss */
+.school-page .pane-video-panel-pane-2 .views-field-field-video .colorbox:hover:after {
+  width: 90px;
+  height: 90px;
+  margin: -45px 0 0 -45px;
+}
+/* line 132, ../sass/settings/_mixins.scss */
 .school-page .pane-video-panel-pane-2 .views-field-field-video .colorbox img {
   padding: 3px;
   background: #4F2F1D;
@@ -2417,15 +2435,15 @@ fieldset {
   vertical-align: middle;
   border: 1px solid #7a5745;
 }
-/* line 177, ../sass/pages/_school.scss */
+/* line 166, ../sass/pages/_school.scss */
 .school-page .pane-video-panel-pane-2 .views-field-title {
   font-size: 14px;
 }
-/* line 180, ../sass/pages/_school.scss */
+/* line 169, ../sass/pages/_school.scss */
 .school-page .pane-video-panel-pane-2 .views-field-title a {
   text-decoration: none;
 }
-/* line 183, ../sass/pages/_school.scss */
+/* line 172, ../sass/pages/_school.scss */
 .school-page .pane-video-panel-pane-2 .views-field-title a:hover {
   text-decoration: underline;
 }
@@ -2454,11 +2472,13 @@ fieldset {
   line-height: 2em;
 }
 
-/* line 2, ../sass/pages/_video.scss */
+/* line 3, ../sass/pages/_video.scss */
 .pane-video-panel-pane-1 .views-row {
-  margin-bottom: 10px;
+  margin: 0 -30px;
+  padding: 10px 30px 25px;
+  border-bottom: 1px solid #4f2f1d;
 }
-/* line 118, ../sass/settings/_mixins.scss */
+/* line 150, ../sass/settings/_mixins.scss */
 .pane-video-panel-pane-1 .views-row:before, .pane-video-panel-pane-1 .views-row:after {
   content: " ";
   visibility: hidden;
@@ -2466,36 +2486,74 @@ fieldset {
   height: 0;
   clear: both;
 }
-/* line 7, ../sass/pages/_video.scss */
+/* line 9, ../sass/pages/_video.scss */
+.pane-video-panel-pane-1 .views-row:nth-child(even) {
+  background: #4a2c1d;
+  background: -moz-linear-gradient(top, #4a2c1d 0%, #442412 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #4a2c1d), color-stop(100%, #442412));
+  background: -webkit-linear-gradient(top, #4a2c1d 0%, #442412 100%);
+  background: -o-linear-gradient(top, #4a2c1d 0%, #442412 100%);
+  background: -ms-linear-gradient(top, #4a2c1d 0%, #442412 100%);
+  background: linear-gradient(to bottom, #4a2c1d 0%, #442412 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
+}
+/* line 13, ../sass/pages/_video.scss */
+.pane-video-panel-pane-1 .views-row:last-child {
+  border-bottom: none;
+}
+/* line 18, ../sass/pages/_video.scss */
+.pane-video-panel-pane-1 .views-field-title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 22, ../sass/pages/_video.scss */
+.pane-video-panel-pane-1 .views-field-title h2 {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 0 10px;
+}
+/* line 29, ../sass/pages/_video.scss */
 .pane-video-panel-pane-1 .colorbox {
   width: 458px;
   margin: 0 20px 20px 0;
+  float: left;
   position: relative;
   display: block;
-  float: left;
 }
-/* line 14, ../sass/pages/_video.scss */
-.pane-video-panel-pane-1 .colorbox:nth-child(even) {
-  margin-right: 0;
-}
-/* line 18, ../sass/pages/_video.scss */
+/* line 110, ../sass/settings/_mixins.scss */
 .pane-video-panel-pane-1 .colorbox:after {
   content: '';
   display: block;
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 458px;
-  height: 304px;
+  top: 50%;
+  left: 50%;
+  margin: -40px 0 0 -40px;
+  width: 80px;
+  height: 80px;
   background: url(../images/play.png) no-repeat center;
+  background-size: contain;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
 }
-/* line 29, ../sass/pages/_video.scss */
+/* line 125, ../sass/settings/_mixins.scss */
+.pane-video-panel-pane-1 .colorbox:hover:after {
+  width: 90px;
+  height: 90px;
+  margin: -45px 0 0 -45px;
+}
+/* line 132, ../sass/settings/_mixins.scss */
 .pane-video-panel-pane-1 .colorbox img {
   padding: 3px;
   background: #4F2F1D;
   border: 1px solid #2E190D;
   vertical-align: middle;
   border: 1px solid #7a5745;
+}
+/* line 35, ../sass/pages/_video.scss */
+.pane-video-panel-pane-1 .colorbox:nth-child(even) {
+  margin-right: 0;
 }
 
 /*@ sourceMappingURL=styles.css.map */

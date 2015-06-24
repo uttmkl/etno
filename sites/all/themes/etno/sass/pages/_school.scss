@@ -109,6 +109,11 @@
       }
     }
 
+    .views-more-link {
+      margin: -15px 0 10px;
+      display: block;
+    }
+
     .views-field-created {
       font-size: 10px;
       color: #ccc;
@@ -152,25 +157,9 @@
 
     .views-field-field-video {
       .colorbox {
-        position: relative;
-        display: block;
+        @include video-icon();
         margin-bottom: 5px;
-
-        &:after {
-          content: '';
-          display: block;
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 278px;
-          height: 208px;
-          background: url(../images/play.png) no-repeat center;
-        }
-
-        img {
-          @include image();
-          border: $light_border;
-        }
+        width: 278px;
       }
     }
 

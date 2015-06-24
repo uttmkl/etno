@@ -1,34 +1,39 @@
 .pane-video-panel-pane-1 {
+
   .views-row {
-    margin-bottom: 10px;
     @include clearfix();
+    margin: 0 -30px;
+    padding: 10px 30px 25px;
+    border-bottom: $border;
+
+    &:nth-child(even) {
+      @include gradient();
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .views-field-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0 0 10px;
+    }
   }
 
   .colorbox {
     width: 458px;
     margin: 0 20px 20px 0;
-    position: relative;
-    display: block;
     float: left;
+    @include video-icon();
 
     &:nth-child(even) {
       margin-right: 0;
-    }
-
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 458px;
-      height: 304px;
-      background: url(../images/play.png) no-repeat center;
-    }
-
-    img {
-      @include image();
-      border: $light_border;
     }
   }
 }
