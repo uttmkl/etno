@@ -1,0 +1,189 @@
+.school-page {
+
+  .panel-col-first {
+    width: 68%;
+    border-top: $border;
+
+    .inside {
+      margin: 0 20px 10px 0;
+    }
+  }
+
+  .panel-col-last {
+    width: 32%;
+    padding: 20px 20px 0 0;
+    background: $second_bg;
+    border-top: $border;
+    @include box-sizing(border-box);
+
+    .inside {
+      margin-left: 20px;
+    }
+
+    .pane-views-panes {
+      padding-bottom: 20px;
+      margin-bottom: 10px;
+      border-bottom: $light_border;
+
+      &:last-child {
+        border: none;
+      }
+
+      h2 {
+        margin: 5px 0;
+      }
+    }
+  }
+
+  .panel-2col {
+    margin: 0 -30px;
+    padding-left: 30px;
+  }
+
+  /*Node*/
+  .views-field-field-logo {
+    float: left;
+    margin: 0 20px 20px;
+  }
+
+  /*Instructors Block*/
+  .view-instructors {
+    .views-row {
+      overflow: hidden;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .views-field-field-photo {
+      float: left;
+      margin-right: 10px;
+
+      img {
+        @include image();
+        border: $light_border;
+      }
+    }
+
+    .views-field-title {
+      font-size: 14px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  /*News Block*/
+  .view-news {
+    .views-row {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: $light_border;
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+
+    .views-field-field-image {
+      .field-content {
+        position: relative;
+        margin: 10px 25px 10px 0;
+      }
+
+      img {
+        @include image();
+        border: $light_border;
+      }
+    }
+
+    .views-field-title {
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        font-family: $header-font;
+      }
+    }
+
+    .views-field-created {
+      font-size: 10px;
+      color: #ccc;
+    }
+  }
+
+  /*Photo Block*/
+  .pane-photo-panel-pane-2 {
+    clear: both;
+
+    .views-row {
+      float: left;
+      position: relative;
+      margin: 0 50px 20px 0;
+
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+
+      img {
+        @include image();
+        border: $light_border;
+      }
+    }
+  }
+
+  /*Video Block*/
+  .pane-video-panel-pane-2 {
+    clear: both;
+
+    .views-row {
+      float: left;
+      width: 50%;
+      padding: 0 20px 20px 0;
+      @include box-sizing(border-box);
+
+      &:nth-child(even) {
+        padding-right: 0;
+      }
+    }
+
+    .views-field-field-video {
+      .colorbox {
+        position: relative;
+        display: block;
+        margin-bottom: 5px;
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 278px;
+          height: 208px;
+          background: url(../images/play.png) no-repeat center;
+        }
+
+        img {
+          @include image();
+          border: $light_border;
+        }
+      }
+    }
+
+    .views-field-title {
+      font-size: 14px;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

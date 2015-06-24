@@ -1,0 +1,27 @@
+.flower-left-block {
+  display: block;
+  position: absolute;
+  background: url("../images/gallery-flower-left.png") no-repeat;
+  width: 63px;
+  height: 89px;
+  top: -28px;
+  left: -35px;
+}
+.flower-right-block {
+  display: block;
+  position: absolute;
+  background: url("../images/gallery-flower-right.png") no-repeat;
+  width: 51px;
+  height: 81px;
+  bottom: 30px;
+  right: -37px;
+}
+.flower-front-block {
+  display: block;
+  position: absolute;
+  background: url("../images/gallery-flower-front.png");
+  width: 106px;
+  height: 68px;
+  bottom: -1px;
+  right: -19px;
+}

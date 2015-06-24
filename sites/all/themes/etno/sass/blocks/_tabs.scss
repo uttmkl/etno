@@ -1,0 +1,43 @@
+.ui-widget-header {
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+
+.ui-widget-content {
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  background: none;
+
+  .ui-tabs-panel {
+    color: rgb(220, 202, 192);
+    border: $light_border;
+    background: #5A4032;
+    font-size: 12px;
+    font-family: $font-body;
+  }
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: $light_border;
+  border-bottom: none;
+  background: url(../images/tabtop-bg.gif) repeat-x left top;
+  border-radius: 0;
+
+  a {
+    color: rgb(204, 204, 204);
+    outline: 0;
+  }
+
+  &.ui-tabs-selected {
+    background: #503A2E url(../images/tabtop-active-r.gif) no-repeat right top;
+
+    a {
+      color: #F8B150;
+      background: url(../images/tabtop-active-l.gif) no-repeat left top;
+    }
+  }
+}

@@ -2,8 +2,8 @@ $legacy-support-for-ie6: false;
 $legacy-support-for-ie7: false;
 $legacy-support-for-ie8: true;
 
-$base-font-size:   14px; // The font size set on the root html element.
-$base-line-height: 21px; // This line-height determines the basic unit of vertical rhythm.
+$base-font-size:   12px; // The font size set on the root html element.
+$base-line-height: 18px; // This line-height determines the basic unit of vertical rhythm.
 
 $h1-font-size: 2    * $base-font-size;
 $h2-font-size: 1.5  * $base-font-size;
@@ -15,7 +15,7 @@ $h6-font-size: 0.67 * $base-font-size;
 // First, let's create some font stacks.
 $times-new-roman: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
 $times:           Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
-$georgia:         Georgia, "Times New Roman", "DejaVu Serif", serif;
+$georgia:         Georgia, Cambria, "Times New Roman", Times, serif;
 
 $verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
@@ -31,18 +31,20 @@ $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 $base-font-family: $helvetica; // The font family set on the html element.
 $font-body:        $helvetica;
 $font-monospace:   $helvetica;
-$header-font:      $times;
+$header-font:      $georgia;
 
 //
 // Colors, etc.
 //
 $bg: #371e10;
+$second_bg: rgba(74,44,29,1);
 $sidebar_bg: #3f271a;
 $main_color: #DCCAC0;
 $link_color: #F8B150;
 $btn_color: $main_color;
-$border_color: #7A5745;
+$border_color: #4F2F1D;
 $border: 1px solid $border_color;
+$light_border: 1px solid #7A5745;
 $selection: #71470e;
 
 // The amount lists, blockquotes and comments are indented.
@@ -59,4 +61,4 @@ $small-breakpoint: 480px;
 $medium-breakpoint: 767px;
 $large-breakpoint: 1024px;
 $tablet-breakpoint: 1003px;
-$max-width: 1200px;
+$max-width: 1000px;

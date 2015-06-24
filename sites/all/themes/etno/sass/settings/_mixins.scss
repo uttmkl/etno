@@ -75,6 +75,7 @@
 
 @mixin link() {
   color: $link_color;
+  @include transition(all 0.5s ease);
 
   &:hover {
     color: $main_color;
@@ -90,6 +91,36 @@
 @mixin form-label() {
 
 }
+
 @mixin fieldset() {
   border-color: $border_color;
+}
+
+@mixin image() {
+  padding: 3px;
+  background: #4F2F1D;
+  border: 1px solid #2E190D;
+  vertical-align: middle;
+}
+
+@mixin gradient() {
+  background: rgba(74,44,29,1);
+  background: -moz-linear-gradient(top, rgba(74,44,29,1) 0%, rgba(68,36,18,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(74,44,29,1)), color-stop(100%, rgba(68,36,18,1)));
+  background: -webkit-linear-gradient(top, rgba(74,44,29,1) 0%, rgba(68,36,18,1) 100%);
+  background: -o-linear-gradient(top, rgba(74,44,29,1) 0%, rgba(68,36,18,1) 100%);
+  background: -ms-linear-gradient(top, rgba(74,44,29,1) 0%, rgba(68,36,18,1) 100%);
+  background: linear-gradient(to bottom, rgba(74,44,29,1) 0%, rgba(68,36,18,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
 }

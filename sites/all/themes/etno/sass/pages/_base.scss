@@ -1,0 +1,156 @@
+body {
+  color: $main_color;
+}
+
+::selection {
+  background: $selection;
+}
+::-moz-selection {
+  background: $selection;
+}
+
+a {
+  @include link();
+}
+
+button, .button, .form-submit {
+  @include button();
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $header-font;
+  font-weight: normal;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+fieldset {
+  @include fieldset();
+}
+
+.form-text, .form-textarea {
+  @include form-input();
+}
+
+.container-inner {
+  position: relative;
+  margin: 0 auto;
+  max-width: $max-width;
+  height: 100%;
+}
+
+#page {
+  max-width: 100%;
+  background: url("../images/container-bg.gif");
+  padding-bottom: 15px;
+  #navigation {
+    margin-top: -46px;
+    background: url("../images/mainnav-bg.png");
+    height: 46px;
+    position: relative;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    .main-menu {
+      outline: none;
+    }
+    #main-menu {
+      display: block;
+      height: 46px;
+    }
+    .container-inner {
+      ul {
+        &.inline {
+          display: inline-block;
+        }
+        margin: 0 0 0 5px;
+        padding: 0 0 0 2px;
+        position: relative;
+        background: url("../images/mainnav-sep.gif") no-repeat left 3px;
+        li {
+          padding: 0 2px 0 0;
+          margin: 0;
+          background: url("../images/mainnav-sep.gif") no-repeat 100% 3px;
+          a {
+            text-decoration: none;
+            padding: 0 20px;
+            font-size: 16px;
+            font-family: $georgia;
+            font-variant: small-caps;
+            line-height: 46px;
+            display: block;
+            background: none;
+            background-position: center 3px;
+            background-repeat: no-repeat;
+            @include transition(all 0.5s ease);
+          }
+          &:hover {
+            a {
+              background: url("../images/mainnav-hover.gif") no-repeat center 3px;
+              color: #DCCAC0;
+
+            }
+          }
+          &.active {
+            a {
+              background: url("../images/mainnav-active-bg.gif") repeat-x center 1px;
+              &:hover {
+                background: url("../images/mainnav-active-bg.gif") repeat-x center 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #main {
+    max-width: $max-width;
+    padding: 0;
+    margin: 0 auto;
+
+    .column {
+      padding: 10px 20px;
+      margin: 0 auto;
+      background: $bg;
+
+      &.column-main {
+        padding: 10px 30px;
+      }
+
+      &.sidebar {
+        background: $sidebar_bg;
+      }
+
+      .content-container {
+        @include box-sizing(border-box);
+      }
+    }
+  }
+}
+
+.page__title,
+.node__title,
+.block__title,
+.comments__title,
+.comments__form-title,
+.comment__title {
+  font-size: 32px;
+}
+
+.link-to-all {
+  font-size: 16px;
+  margin: 20px 0 0;
+  clear: both;
+}

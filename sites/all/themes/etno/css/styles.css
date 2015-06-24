@@ -104,7 +104,7 @@ audio:not([controls]) {
 html {
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
   /* 1 */
-  font-size: 87.5%;
+  font-size: 75%;
   /* 3 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -186,7 +186,7 @@ h2 {
 /* line 195, ../sass/components/_normalize.scss */
 h3 {
   font-size: 1.17em;
-  line-height: 1.28205em;
+  line-height: 2.5641em;
   margin-top: 1.28205em;
   margin-bottom: 1.28205em;
 }
@@ -380,17 +380,17 @@ fieldset {
   /* Apply borders and padding that keep the vertical rhythm. */
   border-color: #c0c0c0;
   border-top-style: solid;
-  border-top-width: 0.07143em;
-  padding-top: 0.45357em;
+  border-top-width: 0.08333em;
+  padding-top: 0.44167em;
   border-bottom-style: solid;
-  border-bottom-width: 0.07143em;
-  padding-bottom: 0.90357em;
+  border-bottom-width: 0.08333em;
+  padding-bottom: 0.89167em;
   border-left-style: solid;
-  border-left-width: 0.07143em;
-  padding-left: 0.90357em;
+  border-left-width: 0.08333em;
+  padding-left: 0.89167em;
   border-right-style: solid;
-  border-right-width: 0.07143em;
-  padding-right: 0.90357em;
+  border-right-width: 0.08333em;
+  padding-right: 0.89167em;
 }
 
 /**
@@ -587,7 +587,7 @@ table {
 .region-bottom {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
@@ -1107,7 +1107,6 @@ table {
 /* Basic positioning styles shared by primary and secondary tabs. */
 /* line 264, ../sass/components/_misc.scss */
 .tabs-primary, .tabs-secondary {
-  overflow: hidden;
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(100%, #bbbbbb), color-stop(100%, transparent));
   background-image: -webkit-linear-gradient(bottom, #bbbbbb 1px, transparent 1px);
   background-image: -moz-linear-gradient(bottom, #bbbbbb 1px, transparent 1px);
@@ -1119,6 +1118,14 @@ table {
   margin: 1.5em 0;
   padding: 0 2px;
   white-space: nowrap;
+}
+/* line 118, ../sass/settings/_mixins.scss */
+.tabs-primary:before, .tabs-secondary:before, .tabs-primary:after, .tabs-secondary:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 /* line 274, ../sass/components/_misc.scss */
@@ -1725,7 +1732,7 @@ tr.selected td {
   #content a[href]:after {
     content: " (" attr(href) ")";
     font-weight: normal;
-    font-size: 14px;
+    font-size: 12px;
   }
   /* line 34, ../sass/components/_print.scss */
   #content a[href^="javascript:"]:after,
@@ -1823,103 +1830,225 @@ tr.selected td {
   outline: none;
 }
 
-/* line 5, ../sass/views/_views-schools.scss */
-.view.view-schools .view-content .views-field-title {
+/* line 1, ../sass/blocks/_footer.scss */
+#footer {
+  background: url(../images/botslwrap-bg.gif);
+  clear: both;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #2F190C;
+  min-height: 236px;
+  padding: 0;
+}
+/* line 10, ../sass/blocks/_footer.scss */
+#footer .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+  height: 100%;
+  background: url(../images/botsl-bg1200.png) no-repeat top center;
+  min-height: 195px;
+}
+
+/* line 1, ../sass/blocks/_breadcrumbs.scss */
+.breadcrumb {
+  margin: 0 -30px 10px;
+  padding: 0 30px;
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #4F2F1D;
+  border-bottom: 1px solid #4F2F1D;
+  background: #4a2c1d;
+  background: -moz-linear-gradient(top, #4a2c1d 0%, #442412 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #4a2c1d), color-stop(100%, #442412));
+  background: -webkit-linear-gradient(top, #4a2c1d 0%, #442412 100%);
+  background: -o-linear-gradient(top, #4a2c1d 0%, #442412 100%);
+  background: -ms-linear-gradient(top, #4a2c1d 0%, #442412 100%);
+  background: linear-gradient(to bottom, #4a2c1d 0%, #442412 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
+}
+/* line 10, ../sass/blocks/_breadcrumbs.scss */
+.breadcrumb a {
+  text-decoration: none;
+  padding-right: 15px;
+  margin-right: 10px;
+  background: url(../images/arrow.png) no-repeat right center;
+}
+
+/* line 1, ../sass/blocks/_images.scss */
+.flower-left-block {
+  display: block;
+  position: absolute;
+  background: url("../images/gallery-flower-left.png") no-repeat;
+  width: 63px;
+  height: 89px;
+  top: -28px;
+  left: -35px;
+}
+
+/* line 10, ../sass/blocks/_images.scss */
+.flower-right-block {
+  display: block;
+  position: absolute;
+  background: url("../images/gallery-flower-right.png") no-repeat;
+  width: 51px;
+  height: 81px;
+  bottom: 30px;
+  right: -37px;
+}
+
+/* line 19, ../sass/blocks/_images.scss */
+.flower-front-block {
+  display: block;
+  position: absolute;
+  background: url("../images/gallery-flower-front.png");
+  width: 106px;
+  height: 68px;
+  bottom: -1px;
+  right: -19px;
+}
+
+/* line 1, ../sass/blocks/_tabs.scss */
+.ui-widget-header {
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+
+/* line 7, ../sass/blocks/_tabs.scss */
+.ui-widget-content {
+  border-radius: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+/* line 13, ../sass/blocks/_tabs.scss */
+.ui-widget-content .ui-tabs-panel {
+  color: #dccac0;
+  border: 1px solid #7a5745;
+  background: #5A4032;
+  font-size: 12px;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+}
+
+/* line 22, ../sass/blocks/_tabs.scss */
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: 1px solid #7a5745;
+  border-bottom: none;
+  background: url(../images/tabtop-bg.gif) repeat-x left top;
+  border-radius: 0;
+}
+/* line 30, ../sass/blocks/_tabs.scss */
+.ui-state-default a,
+.ui-widget-content .ui-state-default a,
+.ui-widget-header .ui-state-default a {
+  color: #cccccc;
+  outline: 0;
+}
+/* line 35, ../sass/blocks/_tabs.scss */
+.ui-state-default.ui-tabs-selected,
+.ui-widget-content .ui-state-default.ui-tabs-selected,
+.ui-widget-header .ui-state-default.ui-tabs-selected {
+  background: #503a2e url(../images/tabtop-active-r.gif) no-repeat right top;
+}
+/* line 38, ../sass/blocks/_tabs.scss */
+.ui-state-default.ui-tabs-selected a,
+.ui-widget-content .ui-state-default.ui-tabs-selected a,
+.ui-widget-header .ui-state-default.ui-tabs-selected a {
+  color: #F8B150;
+  background: url(../images/tabtop-active-l.gif) no-repeat left top;
+}
+
+/* line 3, ../sass/views/_views-schools.scss */
+.view-schools .all-schools .views-row {
+  margin: 0 -30px;
+  padding: 10px 30px 25px;
+  border-bottom: 1px solid #4f2f1d;
+}
+/* line 8, ../sass/views/_views-schools.scss */
+.view-schools .all-schools .views-row:nth-child(odd) {
+  background: #4a2c1d;
+  background: -moz-linear-gradient(top, #4a2c1d 0%, #442412 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #4a2c1d), color-stop(100%, #442412));
+  background: -webkit-linear-gradient(top, #4a2c1d 0%, #442412 100%);
+  background: -o-linear-gradient(top, #4a2c1d 0%, #442412 100%);
+  background: -ms-linear-gradient(top, #4a2c1d 0%, #442412 100%);
+  background: linear-gradient(to bottom, #4a2c1d 0%, #442412 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
+}
+/* line 13, ../sass/views/_views-schools.scss */
+.view-schools .all-schools .views-field-title {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 8, ../sass/views/_views-schools.scss */
-.view.view-schools .view-content .views-field-title a {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  text-decoration: none;
-  color: #F8B150;
-  border-bottom: 1px solid #F8B150;
+/* line 17, ../sass/views/_views-schools.scss */
+.view-schools .all-schools .views-field-title h3 {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 0 10px;
 }
-/* line 13, ../sass/views/_views-schools.scss */
-.view.view-schools .view-content .views-field-title a:hover {
-  border-bottom: 1px solid #DCCAC0;
-  color: #DCCAC0;
-}
-/* line 19, ../sass/views/_views-schools.scss */
-.view.view-schools .view-content .views-field-field-logo {
+/* line 24, ../sass/views/_views-schools.scss */
+.view-schools .all-schools .views-field-field-logo {
   margin-right: 20px;
   float: left;
 }
-/* line 24, ../sass/views/_views-schools.scss */
-.view.view-schools .view-content .views-field-body p {
+/* line 28, ../sass/views/_views-schools.scss */
+.view-schools .all-schools .views-field-field-logo img {
+  padding: 3px;
+  background: #4F2F1D;
+  border: 1px solid #2E190D;
+  vertical-align: middle;
+}
+/* line 34, ../sass/views/_views-schools.scss */
+.view-schools .all-schools .views-field-body p {
   margin-top: -4px;
 }
-/* line 28, ../sass/views/_views-schools.scss */
-.view.view-schools .view-content .views-field-field-styles {
+/* line 39, ../sass/views/_views-schools.scss */
+.view-schools .all-schools .views-field-field-styles,
+.view-schools .all-schools .views-field-field-city {
   float: left;
   margin-right: 50px;
-  color: #DCCAC0;
-}
-/* line 32, ../sass/views/_views-schools.scss */
-.view.view-schools .view-content .views-field-field-styles a {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  text-decoration: none;
-  color: #F8B150;
-  border-bottom: 1px solid #F8B150;
-}
-/* line 37, ../sass/views/_views-schools.scss */
-.view.view-schools .view-content .views-field-field-styles a:hover {
-  border-bottom: 1px solid #DCCAC0;
-  color: #DCCAC0;
-}
-/* line 43, ../sass/views/_views-schools.scss */
-.view.view-schools .view-content .views-field-field-city {
-  float: left;
-  color: #DCCAC0;
-}
-/* line 46, ../sass/views/_views-schools.scss */
-.view.view-schools .view-content .views-field-field-city a {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  text-decoration: none;
-  color: #F8B150;
-  border-bottom: 1px solid #F8B150;
-}
-/* line 51, ../sass/views/_views-schools.scss */
-.view.view-schools .view-content .views-field-field-city a:hover {
-  border-bottom: 1px solid #DCCAC0;
-  color: #DCCAC0;
+  font-size: 12px;
+  max-width: 50%;
 }
 
-/* line 5, ../sass/_layout.scss */
+/* line 49, ../sass/views/_views-schools.scss */
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 0;
+}
+
+/* line 1, ../sass/pages/_base.scss */
 body {
   color: #dccac0;
 }
 
-/* line 9, ../sass/_layout.scss */
+/* line 5, ../sass/pages/_base.scss */
 ::selection {
   background: #71470e;
 }
 
-/* line 12, ../sass/_layout.scss */
+/* line 8, ../sass/pages/_base.scss */
 ::-moz-selection {
   background: #71470e;
 }
 
-/* line 16, ../sass/_layout.scss */
+/* line 12, ../sass/pages/_base.scss */
 a {
   color: #f8b150;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-/* line 79, ../sass/settings/_mixins.scss */
+/* line 80, ../sass/settings/_mixins.scss */
 a:hover {
   color: #dccac0;
   text-decoration: underline;
 }
 
-/* line 20, ../sass/_layout.scss */
+/* line 16, ../sass/pages/_base.scss */
 button, .button, .form-submit {
   background-color: #71470e;
   background-image: url('../images/../images/btn-bg.png?1431612107'), -webkit-gradient(linear, to bottom, to top, color-stop(0%, #662502), color-stop(100%, #71470e));
@@ -1948,52 +2077,53 @@ button:hover, .button:hover, .form-submit:hover {
   background-image: url('../images/../images/btn-bg.png?1431612107'), linear-gradient(to bottom, #71470e, #662502);
 }
 
-/* line 24, ../sass/_layout.scss */
+/* line 20, ../sass/pages/_base.scss */
 h1, h2, h3, h4, h5 {
-  font-family: Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: normal;
 }
-/* line 27, ../sass/_layout.scss */
+/* line 24, ../sass/pages/_base.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a {
   text-decoration: none;
 }
-/* line 30, ../sass/_layout.scss */
+/* line 27, ../sass/pages/_base.scss */
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   text-decoration: none;
 }
 
-/* line 36, ../sass/_layout.scss */
+/* line 33, ../sass/pages/_base.scss */
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 42, ../sass/_layout.scss */
+/* line 39, ../sass/pages/_base.scss */
 fieldset {
-  border-color: #7a5745;
+  border-color: #4f2f1d;
 }
 
-/* line 46, ../sass/_layout.scss */
+/* line 43, ../sass/pages/_base.scss */
 .form-text, .form-textarea {
-  background: #7a5745;
+  background: #4f2f1d;
   border: #662502;
 }
 
-/* line 50, ../sass/_layout.scss */
+/* line 47, ../sass/pages/_base.scss */
 .container-inner {
   position: relative;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
   height: 100%;
 }
 
-/* line 57, ../sass/_layout.scss */
+/* line 54, ../sass/pages/_base.scss */
 #page {
   max-width: 100%;
   background: url("../images/container-bg.gif");
   padding-bottom: 15px;
 }
-/* line 61, ../sass/_layout.scss */
+/* line 58, ../sass/pages/_base.scss */
 #page #navigation {
   margin-top: -46px;
   background: url("../images/mainnav-bg.png");
@@ -2003,101 +2133,369 @@ fieldset {
   z-index: 9;
   width: 100%;
 }
-/* line 69, ../sass/_layout.scss */
+/* line 66, ../sass/pages/_base.scss */
 #page #navigation .main-menu {
   outline: none;
 }
-/* line 73, ../sass/_layout.scss */
+/* line 69, ../sass/pages/_base.scss */
+#page #navigation #main-menu {
+  display: block;
+  height: 46px;
+}
+/* line 74, ../sass/pages/_base.scss */
 #page #navigation .container-inner ul {
   margin: 0 0 0 5px;
   padding: 0 0 0 2px;
   position: relative;
   background: url("../images/mainnav-sep.gif") no-repeat left 3px;
 }
-/* line 74, ../sass/_layout.scss */
+/* line 75, ../sass/pages/_base.scss */
 #page #navigation .container-inner ul.inline {
   display: inline-block;
 }
-/* line 81, ../sass/_layout.scss */
+/* line 82, ../sass/pages/_base.scss */
 #page #navigation .container-inner ul li {
   padding: 0 2px 0 0;
   margin: 0;
   background: url("../images/mainnav-sep.gif") no-repeat 100% 3px;
 }
-/* line 85, ../sass/_layout.scss */
+/* line 86, ../sass/pages/_base.scss */
 #page #navigation .container-inner ul li a {
-  line-height: 46px;
   text-decoration: none;
   padding: 0 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  display: block;
+  font-size: 16px;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-variant: small-caps;
+  line-height: 46px;
+  display: block;
+  background: none;
+  background-position: center 3px;
+  background-repeat: no-repeat;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background: none;
-  background-position: center 3px;
-  background-repeat: no-repeat;
 }
-/* line 98, ../sass/_layout.scss */
+/* line 100, ../sass/pages/_base.scss */
 #page #navigation .container-inner ul li:hover a {
   background: url("../images/mainnav-hover.gif") no-repeat center 3px;
   color: #DCCAC0;
 }
-/* line 105, ../sass/_layout.scss */
+/* line 107, ../sass/pages/_base.scss */
 #page #navigation .container-inner ul li.active a {
   background: url("../images/mainnav-active-bg.gif") repeat-x center 1px;
 }
-/* line 107, ../sass/_layout.scss */
+/* line 109, ../sass/pages/_base.scss */
 #page #navigation .container-inner ul li.active a:hover {
   background: url("../images/mainnav-active-bg.gif") repeat-x center 1px;
 }
-/* line 116, ../sass/_layout.scss */
+/* line 118, ../sass/pages/_base.scss */
 #page #main {
-  max-width: 1200px;
+  max-width: 1000px;
   padding: 0;
   margin: 0 auto;
 }
-/* line 121, ../sass/_layout.scss */
+/* line 123, ../sass/pages/_base.scss */
 #page #main .column {
   padding: 10px 20px;
   margin: 0 auto;
   background: #371e10;
 }
-/* line 126, ../sass/_layout.scss */
+/* line 128, ../sass/pages/_base.scss */
 #page #main .column.column-main {
   padding: 10px 30px;
 }
-/* line 130, ../sass/_layout.scss */
+/* line 132, ../sass/pages/_base.scss */
 #page #main .column.sidebar {
   background: #3f271a;
 }
-/* line 134, ../sass/_layout.scss */
+/* line 136, ../sass/pages/_base.scss */
 #page #main .column .content-container {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 141, ../sass/_layout.scss */
-#footer {
-  background: url(../images/botslwrap-bg.gif);
-  clear: both;
-  position: relative;
-  text-align: center;
-  border-bottom: 1px solid #2F190C;
-  min-height: 236px;
-  padding: 0;
+/* line 143, ../sass/pages/_base.scss */
+.page__title,
+.node__title,
+.block__title,
+.comments__title,
+.comments__form-title,
+.comment__title {
+  font-size: 32px;
 }
-/* line 149, ../sass/_layout.scss */
-#footer .wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 0;
-  height: 100%;
-  background: url(../images/botsl-bg1200.png) no-repeat top center;
-  min-height: 195px;
+
+/* line 152, ../sass/pages/_base.scss */
+.link-to-all {
+  font-size: 16px;
+  margin: 20px 0 0;
+  clear: both;
+}
+
+/* line 1, ../sass/pages/_school.scss */
+.school-page {
+  /*Node*/
+  /*Instructors Block*/
+  /*News Block*/
+  /*Photo Block*/
+  /*Video Block*/
+}
+/* line 3, ../sass/pages/_school.scss */
+.school-page .panel-col-first {
+  width: 68%;
+  border-top: 1px solid #4f2f1d;
+}
+/* line 7, ../sass/pages/_school.scss */
+.school-page .panel-col-first .inside {
+  margin: 0 20px 10px 0;
+}
+/* line 12, ../sass/pages/_school.scss */
+.school-page .panel-col-last {
+  width: 32%;
+  padding: 20px 20px 0 0;
+  background: #4a2c1d;
+  border-top: 1px solid #4f2f1d;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 19, ../sass/pages/_school.scss */
+.school-page .panel-col-last .inside {
+  margin-left: 20px;
+}
+/* line 23, ../sass/pages/_school.scss */
+.school-page .panel-col-last .pane-views-panes {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #7a5745;
+}
+/* line 28, ../sass/pages/_school.scss */
+.school-page .panel-col-last .pane-views-panes:last-child {
+  border: none;
+}
+/* line 32, ../sass/pages/_school.scss */
+.school-page .panel-col-last .pane-views-panes h2 {
+  margin: 5px 0;
+}
+/* line 38, ../sass/pages/_school.scss */
+.school-page .panel-2col {
+  margin: 0 -30px;
+  padding-left: 30px;
+}
+/* line 44, ../sass/pages/_school.scss */
+.school-page .views-field-field-logo {
+  float: left;
+  margin: 0 20px 20px;
+}
+/* line 51, ../sass/pages/_school.scss */
+.school-page .view-instructors .views-row {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+/* line 55, ../sass/pages/_school.scss */
+.school-page .view-instructors .views-row:last-child {
+  margin-bottom: 0;
+}
+/* line 60, ../sass/pages/_school.scss */
+.school-page .view-instructors .views-field-field-photo {
+  float: left;
+  margin-right: 10px;
+}
+/* line 64, ../sass/pages/_school.scss */
+.school-page .view-instructors .views-field-field-photo img {
+  padding: 3px;
+  background: #4F2F1D;
+  border: 1px solid #2E190D;
+  vertical-align: middle;
+  border: 1px solid #7a5745;
+}
+/* line 70, ../sass/pages/_school.scss */
+.school-page .view-instructors .views-field-title {
+  font-size: 14px;
+}
+/* line 73, ../sass/pages/_school.scss */
+.school-page .view-instructors .views-field-title a {
+  text-decoration: none;
+}
+/* line 81, ../sass/pages/_school.scss */
+.school-page .view-news .views-row {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #7a5745;
+}
+/* line 86, ../sass/pages/_school.scss */
+.school-page .view-news .views-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+/* line 93, ../sass/pages/_school.scss */
+.school-page .view-news .views-field-field-image .field-content {
+  position: relative;
+  margin: 10px 25px 10px 0;
+}
+/* line 98, ../sass/pages/_school.scss */
+.school-page .view-news .views-field-field-image img {
+  padding: 3px;
+  background: #4F2F1D;
+  border: 1px solid #2E190D;
+  vertical-align: middle;
+  border: 1px solid #7a5745;
+}
+/* line 105, ../sass/pages/_school.scss */
+.school-page .view-news .views-field-title a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+/* line 112, ../sass/pages/_school.scss */
+.school-page .view-news .views-field-created {
+  font-size: 10px;
+  color: #ccc;
+}
+/* line 119, ../sass/pages/_school.scss */
+.school-page .pane-photo-panel-pane-2 {
+  clear: both;
+}
+/* line 122, ../sass/pages/_school.scss */
+.school-page .pane-photo-panel-pane-2 .views-row {
+  float: left;
+  position: relative;
+  margin: 0 50px 20px 0;
+}
+/* line 127, ../sass/pages/_school.scss */
+.school-page .pane-photo-panel-pane-2 .views-row:nth-child(even) {
+  margin-right: 0;
+}
+/* line 131, ../sass/pages/_school.scss */
+.school-page .pane-photo-panel-pane-2 .views-row img {
+  padding: 3px;
+  background: #4F2F1D;
+  border: 1px solid #2E190D;
+  vertical-align: middle;
+  border: 1px solid #7a5745;
+}
+/* line 139, ../sass/pages/_school.scss */
+.school-page .pane-video-panel-pane-2 {
+  clear: both;
+}
+/* line 142, ../sass/pages/_school.scss */
+.school-page .pane-video-panel-pane-2 .views-row {
+  float: left;
+  width: 50%;
+  padding: 0 20px 20px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 148, ../sass/pages/_school.scss */
+.school-page .pane-video-panel-pane-2 .views-row:nth-child(even) {
+  padding-right: 0;
+}
+/* line 154, ../sass/pages/_school.scss */
+.school-page .pane-video-panel-pane-2 .views-field-field-video .colorbox {
+  position: relative;
+  display: block;
+  margin-bottom: 5px;
+}
+/* line 159, ../sass/pages/_school.scss */
+.school-page .pane-video-panel-pane-2 .views-field-field-video .colorbox:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 278px;
+  height: 208px;
+  background: url(../images/play.png) no-repeat center;
+}
+/* line 170, ../sass/pages/_school.scss */
+.school-page .pane-video-panel-pane-2 .views-field-field-video .colorbox img {
+  padding: 3px;
+  background: #4F2F1D;
+  border: 1px solid #2E190D;
+  vertical-align: middle;
+  border: 1px solid #7a5745;
+}
+/* line 177, ../sass/pages/_school.scss */
+.school-page .pane-video-panel-pane-2 .views-field-title {
+  font-size: 14px;
+}
+/* line 180, ../sass/pages/_school.scss */
+.school-page .pane-video-panel-pane-2 .views-field-title a {
+  text-decoration: none;
+}
+/* line 183, ../sass/pages/_school.scss */
+.school-page .pane-video-panel-pane-2 .views-field-title a:hover {
+  text-decoration: underline;
+}
+
+/* line 4, ../sass/pages/_photos.scss */
+.pane-photo-panel-pane-1 .views-field-field-photos .field-content {
+  overflow: hidden;
+}
+/* line 8, ../sass/pages/_photos.scss */
+.pane-photo-panel-pane-1 .views-field-field-photos .colorbox {
+  float: left;
+  position: relative;
+  margin: 0 30px 30px 0;
+}
+/* line 14, ../sass/pages/_photos.scss */
+.pane-photo-panel-pane-1 .views-field-field-photos img {
+  padding: 3px;
+  background: #4F2F1D;
+  border: 1px solid #2E190D;
+  vertical-align: middle;
+  border: 1px solid #7a5745;
+}
+/* line 20, ../sass/pages/_photos.scss */
+.pane-photo-panel-pane-1 h3 {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+/* line 2, ../sass/pages/_video.scss */
+.pane-video-panel-pane-1 .views-row {
+  margin-bottom: 10px;
+}
+/* line 118, ../sass/settings/_mixins.scss */
+.pane-video-panel-pane-1 .views-row:before, .pane-video-panel-pane-1 .views-row:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+/* line 7, ../sass/pages/_video.scss */
+.pane-video-panel-pane-1 .colorbox {
+  width: 458px;
+  margin: 0 20px 20px 0;
+  position: relative;
+  display: block;
+  float: left;
+}
+/* line 14, ../sass/pages/_video.scss */
+.pane-video-panel-pane-1 .colorbox:nth-child(even) {
+  margin-right: 0;
+}
+/* line 18, ../sass/pages/_video.scss */
+.pane-video-panel-pane-1 .colorbox:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 458px;
+  height: 304px;
+  background: url(../images/play.png) no-repeat center;
+}
+/* line 29, ../sass/pages/_video.scss */
+.pane-video-panel-pane-1 .colorbox img {
+  padding: 3px;
+  background: #4F2F1D;
+  border: 1px solid #2E190D;
+  vertical-align: middle;
+  border: 1px solid #7a5745;
 }
 
 /*@ sourceMappingURL=styles.css.map */

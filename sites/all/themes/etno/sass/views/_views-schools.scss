@@ -1,59 +1,51 @@
-.view {
-  &.view-schools {
-    .view-content {
+.view-schools {
+  .all-schools {
+    .views-row {
+      margin: 0 -30px;
+      padding: 10px 30px 25px;
+      border-bottom: $border;
 
-      .views-field-title {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        a {
-          @include transition(all 0.5s ease);
-          text-decoration: none;
-          color: #F8B150;
-          border-bottom: 1px solid #F8B150;
-          &:hover{
-            border-bottom: 1px solid #DCCAC0;
-            color: #DCCAC0;
-          }
-        }
-      }
-      .views-field-field-logo {
-        margin-right: 20px;
-        float: left;
-      }
-      .views-field-body {
-        p{
-          margin-top: -4px;
-        }
-      }
-      .views-field-field-styles {
-        float: left;
-        margin-right: 50px;
-        color: #DCCAC0;
-        a {
-          @include transition(all 0.5s ease);
-          text-decoration: none;
-          color: #F8B150;
-          border-bottom: 1px solid #F8B150;
-          &:hover{
-            border-bottom: 1px solid #DCCAC0;
-            color: #DCCAC0;
-          }
-        }
-      }
-      .views-field-field-city {
-        float: left;
-        color: #DCCAC0;
-        a {
-          @include transition(all 0.5s ease);
-          text-decoration: none;
-          color: #F8B150;
-          border-bottom: 1px solid #F8B150;
-          &:hover{
-            border-bottom: 1px solid #DCCAC0;
-            color: #DCCAC0;
-          }
-        }
+      &:nth-child(odd) {
+        @include gradient();
       }
     }
+
+    .views-field-title {
+      margin-top: 15px;
+      margin-bottom: 15px;
+
+      h3 {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0 0 10px;
+      }
+    }
+
+    .views-field-field-logo {
+      margin-right: 20px;
+      float: left;
+
+      img {
+        @include image();
+      }
+    }
+
+    .views-field-body {
+      p {
+        margin-top: -4px;
+      }
+    }
+
+    .views-field-field-styles,
+    .views-field-field-city {
+      float: left;
+      margin-right: 50px;
+      font-size: 12px;
+      max-width: 50%;
+    }
   }
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 0;
 }

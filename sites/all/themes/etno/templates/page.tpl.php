@@ -45,6 +45,11 @@
               ),
             )); ?>
           </nav>
+        <?php else: ?>
+          <?php global $base_url; ?>
+          <div class="header-enter">
+            <a href="<?php print $base_url; ?>/user" ><?php print t("Log in"); ?></a>
+          </div>
         <?php endif; ?>
 
         <?php print render($page['header']); ?>

@@ -1,0 +1,16 @@
+.breadcrumb {
+  margin: 0 -30px 10px;
+  padding: 0 30px;
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #4F2F1D;
+  border-bottom: 1px solid #4F2F1D;
+  @include gradient();
+
+  a {
+    text-decoration: none;
+    padding-right: 15px;
+    margin-right: 10px;
+    background: url(../images/arrow.png) no-repeat right center;
+  }
+}
