@@ -16,20 +16,70 @@
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.etno = {
   attach: function(context, settings) {
-    $(".tabs-ui").tabs();
+    Etno = {
+      init: function() {
+        this.initTabs();
+        this.initForms();
+        this.initGallery();
+      },
 
-    // Place your code here.
-    if ($('form.node-instructor-form, form.node-news-form, form.node-photos-form, form.node-video-form').size() > 0) {
-      setSchool();
-    }
+      initTabs: function() {
+        $(".tabs-ui").tabs();
+      },
 
-    function setSchool() {
-      var schoolId = $("#page").data("schoolid");
+      initForms: function() {
+        if ($('form.node-instructor-form, form.node-news-form, form.node-photos-form, form.node-video-form').size() > 0) {
+          setSchool();
+        }
 
-      if (schoolId) {
-        $('#edit-field-school-und option[value=' + schoolId + ']').attr('selected', 'selected');
+        function setSchool() {
+          var schoolId = $("#page").data("schoolid");
+
+          if (schoolId) {
+            $('#edit-field-school-und option[value=' + schoolId + ']').attr('selected', 'selected');
+          }
+        }
+      },
+
+      initGallery: function() {
+        var galleries = $('.photo_gallery_wrapper');
+
+        if (galleries.size() > 0) {
+          galleries.each(function() {
+            $(this).GITheWall({
+              onBeforeInit: null,
+              onReady: null,
+              onViewPortUpdate: null,
+              onItemChange: null,
+              onDestroy: null,
+              onShow: null,
+              onHide: null,
+              onContentLoading: null,
+              onContentLoaded: null,
+              margin: {
+                top: 25,
+                bottom: 20
+              },
+              scrollerElm: null,
+              scrollOffset: 150,
+              arrows: true,
+              closebutton: true,
+              keyboardNavigation: true,
+              animationSpeed: 300,
+              autoscroll: true,
+              responsive: true,
+              initialWrapperHeight: 600,
+              dynamicHeight: true,
+              nextButtonClass: '',
+              prevButtonClass: '',
+              closeButtonClass: ''
+            });
+          });
+        }
       }
-    }
+    };
+
+    Etno.init();
   }
 };
 

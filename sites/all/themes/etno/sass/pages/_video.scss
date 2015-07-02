@@ -1,4 +1,4 @@
-.pane-video-panel-pane-1 {
+.view-video-wrapper {
 
   .views-row {
     @include clearfix();
@@ -8,6 +8,15 @@
 
     &:nth-child(even) {
       @include gradient();
+
+      .views-field-field-video {
+        float: right;
+        margin-left: 20px;
+
+        a {
+          margin-right: 0;
+        }
+      }
     }
 
     &:last-child {

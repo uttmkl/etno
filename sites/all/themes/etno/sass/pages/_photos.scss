@@ -4,11 +4,25 @@
     .field-content {
       overflow: hidden;
     }
+  }
 
-    .colorbox {
-      float: left;
-      position: relative;
-      margin: 0 30px 30px 0;
+  h3 {
+    font-size: 1.5em;
+    line-height: 2em;
+    margin-bottom: 0;
+  }
+}
+
+.photo_gallery_wrapper {
+  li {
+    display: inline-block;
+    margin: 15px;
+    vertical-align: top;
+    width: 278px;
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
     }
 
     img {
@@ -17,8 +31,40 @@
     }
   }
 
-  h3 {
-    font-size: 1.5em;
-    line-height: 2em;
+  .GI_TW_expander.opened {
+    @include gradient();
+    border-bottom: 1px solid #4F2F1D;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    img {
+      border: none;
+    }
+  }
+
+  .GI_TW_expander {
+    .GI_TW_pointer {
+      border-bottom-color: rgba(74,44,29,1);
+      margin-left: 20px;
+    }
+
+    .GI_TW_expander-inner {
+      width: 100%;
+    }
+
+    .GI_TW_fullimg {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin: 0;
+      @include box-sizing(border-box);
+
+      img {
+        height: 100%;
+        vertical-align: top;
+      }
+    }
   }
 }
