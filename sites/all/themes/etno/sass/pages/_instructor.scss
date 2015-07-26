@@ -28,4 +28,40 @@
     line-height: 24px;
     margin: 20px 0;
   }
+
+
+  img {
+    @include image();
+    border: $light_border;
+  }
+}
+
+/*Instructors Block*/
+.view-instructors-small {
+  .views-row {
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .views-field-field-photo {
+    float: left;
+    margin-right: 10px;
+
+    img {
+      @include image();
+      border: $light_border;
+    }
+  }
+
+  .views-field-title {
+    font-size: 14px;
+
+    a {
+      text-decoration: none;
+    }
+  }
 }
