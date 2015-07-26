@@ -23,6 +23,11 @@
       margin: 0 30px 0 15px;
       position: relative;
     }
+
+    img {
+      @include image();
+      border: $light_border;
+    }
   }
 
   .views-field-title {
@@ -38,6 +43,29 @@
 
   .views-field-created {
     font-size: 10px;
+  }
+
+  &.small-block {
+    .views-row {
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 18px;
+      line-height: normal;
+      margin-bottom: 10px;
+    }
+
+    .views-row {
+      &:nth-child(even) .views-field-field-image {
+        margin: 0 15px 0 20px;
+      }
+
+      .views-field-field-image {
+        margin-left: 0;
+      }
+    }
+
   }
 }
 

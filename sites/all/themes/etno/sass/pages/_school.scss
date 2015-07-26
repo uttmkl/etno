@@ -46,36 +46,6 @@
     margin: 0 20px 20px;
   }
 
-  /*Instructors Block*/
-  .view-instructors {
-    .views-row {
-      overflow: hidden;
-      margin-bottom: 10px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    .views-field-field-photo {
-      float: left;
-      margin-right: 10px;
-
-      img {
-        @include image();
-        border: $light_border;
-      }
-    }
-
-    .views-field-title {
-      font-size: 14px;
-
-      a {
-        text-decoration: none;
-      }
-    }
-  }
-
   /*News Block*/
   .view-news {
     .views-row {
@@ -227,4 +197,50 @@
 
 .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 0;
+}
+
+.view-school-wrapper {
+  &.small {
+    margin-left: 30px;
+
+    h2.pane-title {
+      margin: 10px 0;
+    }
+
+    .views-row {
+      display: inline-block;
+      width: 49%;
+      border-bottom: $light_border;
+      vertical-align: top;
+      padding-right: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      min-height: 430px;
+      @include box-sizing(border-box);
+
+      &:nth-child(even) {
+        padding-left: 15px;
+      }
+
+      h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        line-height: 18px;
+      }
+
+      .views-more-link {
+        display: block;
+        position: relative;
+        top: -15px;
+      }
+
+      .views-field-field-styles,
+      .views-field-field-city {
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 10px;
+      }
+    }
+  }
 }

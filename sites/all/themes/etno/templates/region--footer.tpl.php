@@ -10,7 +10,9 @@
 <?php if ($content): ?>
   <footer id="footer" class="<?php print $classes; ?>">
       <div class="wrapper">
-            <?php print $content; ?>
+        <div class="line left"></div>
+        <?php print $content; ?>
+        <div class="line right"></div>
       </div>
   </footer>
 <?php endif; ?>
