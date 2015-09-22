@@ -2769,6 +2769,14 @@ fieldset {
   position: relative;
 }
 
+/* line 3, ../sass/pages/_instructor.scss */
+.page-node .view-instructor-wrapper .views-row {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+}
+
 /* line 150, ../sass/settings/_mixins.scss */
 .view-instructor-wrapper:before, .view-instructor-wrapper:after {
   content: " ";
@@ -2777,7 +2785,7 @@ fieldset {
   height: 0;
   clear: both;
 }
-/* line 4, ../sass/pages/_instructor.scss */
+/* line 15, ../sass/pages/_instructor.scss */
 .view-instructor-wrapper .views-row {
   display: inline-block;
   width: 49%;
@@ -2788,27 +2796,27 @@ fieldset {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 12, ../sass/pages/_instructor.scss */
+/* line 23, ../sass/pages/_instructor.scss */
 .view-instructor-wrapper .views-row:nth-child(even) {
   padding: 20px 0 20px 20px;
 }
-/* line 17, ../sass/pages/_instructor.scss */
+/* line 28, ../sass/pages/_instructor.scss */
 .view-instructor-wrapper .views-field-field-photo {
   position: relative;
   float: left;
   margin-right: 40px;
 }
-/* line 23, ../sass/pages/_instructor.scss */
+/* line 34, ../sass/pages/_instructor.scss */
 .view-instructor-wrapper h2 {
   margin-top: 0;
 }
-/* line 27, ../sass/pages/_instructor.scss */
+/* line 38, ../sass/pages/_instructor.scss */
 .view-instructor-wrapper h3 {
   font-size: 24px;
   line-height: 24px;
   margin: 20px 0;
 }
-/* line 34, ../sass/pages/_instructor.scss */
+/* line 44, ../sass/pages/_instructor.scss */
 .view-instructor-wrapper img {
   padding: 3px;
   background: #4F2F1D;
@@ -2818,21 +2826,21 @@ fieldset {
 }
 
 /*Instructors Block*/
-/* line 42, ../sass/pages/_instructor.scss */
+/* line 52, ../sass/pages/_instructor.scss */
 .view-instructors-small .views-row {
   overflow: hidden;
   margin-bottom: 10px;
 }
-/* line 46, ../sass/pages/_instructor.scss */
+/* line 56, ../sass/pages/_instructor.scss */
 .view-instructors-small .views-row:last-child {
   margin-bottom: 0;
 }
-/* line 51, ../sass/pages/_instructor.scss */
+/* line 61, ../sass/pages/_instructor.scss */
 .view-instructors-small .views-field-field-photo {
   float: left;
   margin-right: 10px;
 }
-/* line 55, ../sass/pages/_instructor.scss */
+/* line 65, ../sass/pages/_instructor.scss */
 .view-instructors-small .views-field-field-photo img {
   padding: 3px;
   background: #4F2F1D;
@@ -2840,11 +2848,11 @@ fieldset {
   vertical-align: middle;
   border: 1px solid #7a5745;
 }
-/* line 61, ../sass/pages/_instructor.scss */
+/* line 71, ../sass/pages/_instructor.scss */
 .view-instructors-small .views-field-title {
   font-size: 14px;
 }
-/* line 64, ../sass/pages/_instructor.scss */
+/* line 74, ../sass/pages/_instructor.scss */
 .view-instructors-small .views-field-title a {
   text-decoration: none;
 }
