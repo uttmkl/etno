@@ -2908,30 +2908,29 @@ fieldset {
 .front .panel-2col-bricks .panel-col-last {
   width: 32%;
   padding: 20px 20px 0 0;
-  background: #4a2c1d;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 29, ../sass/pages/_home.scss */
+/* line 28, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .panel-col-last .inside {
   margin-left: 20px;
 }
-/* line 33, ../sass/pages/_home.scss */
+/* line 32, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .panel-col-last .pane-views {
   padding-bottom: 20px;
   margin-bottom: 10px;
   border-bottom: 1px solid #7a5745;
 }
-/* line 38, ../sass/pages/_home.scss */
+/* line 37, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .panel-col-last .pane-views:last-child {
   border: none;
 }
-/* line 42, ../sass/pages/_home.scss */
+/* line 41, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .panel-col-last .pane-views h2 {
   margin: 5px 0;
 }
-/* line 48, ../sass/pages/_home.scss */
+/* line 47, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .panel-col-last .views-field-field-video a {
   position: relative;
   display: block;
@@ -2967,19 +2966,19 @@ fieldset {
   vertical-align: middle;
   border: 1px solid #7a5745;
 }
-/* line 54, ../sass/pages/_home.scss */
+/* line 53, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .view-photo {
   padding: 0 5px 0 30px;
 }
-/* line 58, ../sass/pages/_home.scss */
+/* line 57, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .photo_gallery_wrapper li {
   margin: 15px 15px 15px 0;
 }
-/* line 61, ../sass/pages/_home.scss */
+/* line 60, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .photo_gallery_wrapper li:nth-child(even) {
   margin-left: 15px;
 }
-/* line 67, ../sass/pages/_home.scss */
+/* line 66, ../sass/pages/_home.scss */
 .front h2.pane-title {
   margin: 0;
 }
