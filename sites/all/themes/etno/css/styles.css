@@ -2505,24 +2505,29 @@ fieldset {
   margin-left: 25px;
 }
 /* line 227, ../sass/pages/_school.scss */
+.view-school-wrapper.small .views-row:last-child {
+  border-width: 3px;
+}
+/* line 231, ../sass/pages/_school.scss */
 .view-school-wrapper.small .views-row .views-field-field-logo {
   float: left;
   margin-right: 25px;
+  margin-bottom: 15px;
 }
-/* line 232, ../sass/pages/_school.scss */
+/* line 237, ../sass/pages/_school.scss */
 .view-school-wrapper.small .views-row h3 {
   margin-top: 0;
   margin-bottom: 10px;
   line-height: 18px;
   font-size: 1.5em;
 }
-/* line 239, ../sass/pages/_school.scss */
+/* line 244, ../sass/pages/_school.scss */
 .view-school-wrapper.small .views-row .views-more-link {
   display: block;
   position: relative;
   top: -15px;
 }
-/* line 245, ../sass/pages/_school.scss */
+/* line 250, ../sass/pages/_school.scss */
 .view-school-wrapper.small .views-row .views-field-field-styles,
 .view-school-wrapper.small .views-row .views-field-field-city {
   width: 45%;
@@ -2977,6 +2982,11 @@ fieldset {
 /* line 67, ../sass/pages/_home.scss */
 .front h2.pane-title {
   margin: 0;
+}
+/* line 71, ../sass/pages/_home.scss */
+.front .pane-news {
+  border-bottom: 1px solid #4f2f1d;
+  margin-bottom: 25px;
 }
 
 /*@ sourceMappingURL=styles.css.map */

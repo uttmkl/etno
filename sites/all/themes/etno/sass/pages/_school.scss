@@ -224,9 +224,14 @@
 		  }
       }
 
+		&:last-child {
+			border-width: 3px;
+		}
+
 		.views-field-field-logo {
 			float: left;
 			margin-right: 25px;
+			margin-bottom: 15px;
 		}
 
       h3 {
