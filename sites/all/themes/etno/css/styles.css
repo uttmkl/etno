@@ -2983,10 +2983,5 @@ fieldset {
 .front h2.pane-title {
   margin: 0;
 }
-/* line 71, ../sass/pages/_home.scss */
-.front .pane-news {
-  border-bottom: 1px solid #4f2f1d;
-  margin-bottom: 25px;
-}
 
 /*@ sourceMappingURL=styles.css.map */
