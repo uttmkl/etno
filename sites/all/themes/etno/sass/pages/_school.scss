@@ -202,30 +202,38 @@
 .view-school-wrapper {
   &.small {
     margin-left: 30px;
+	  margin-bottom: 25px;
 
     h2.pane-title {
       margin: 10px 0;
     }
 
     .views-row {
-      display: inline-block;
-      width: 49%;
-      border-bottom: $light_border;
-      vertical-align: top;
-      padding-right: 15px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      min-height: 430px;
-      @include box-sizing(border-box);
+		@include clearfix();
+		margin: 0 -10px 0 -30px;
+		padding: 25px 30px 25px;
+		border-bottom: $border;
 
       &:nth-child(even) {
-        padding-left: 15px;
+		  @include gradient();
+
+		  .views-field-field-logo {
+			  float: right;
+			  margin-right: 0;
+			  margin-left: 25px;
+		  }
       }
+
+		.views-field-field-logo {
+			float: left;
+			margin-right: 25px;
+		}
 
       h3 {
         margin-top: 0;
         margin-bottom: 10px;
         line-height: 18px;
+		  font-size: 1.5em;
       }
 
       .views-more-link {
