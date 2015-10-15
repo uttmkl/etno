@@ -237,8 +237,8 @@ dfn {
 /* Address differences between Firefox and other browsers. */
 /* line 233, ../sass/components/_normalize.scss */
 hr {
-  -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
   border: 1px solid #666;
@@ -379,17 +379,17 @@ fieldset {
   margin: 0 2px;
   /* Apply borders and padding that keep the vertical rhythm. */
   border-color: #c0c0c0;
-  border-top-style: solid;
   border-top-width: 0.08333em;
+  border-top-style: solid;
   padding-top: 0.44167em;
-  border-bottom-style: solid;
   border-bottom-width: 0.08333em;
+  border-bottom-style: solid;
   padding-bottom: 0.89167em;
-  border-left-style: solid;
   border-left-width: 0.08333em;
+  border-left-style: solid;
   padding-left: 0.89167em;
-  border-right-style: solid;
   border-right-width: 0.08333em;
+  border-right-style: solid;
   padding-right: 0.89167em;
 }
 
@@ -426,8 +426,8 @@ textarea {
   /* 3 */
   max-width: 100%;
   /* 5 */
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 5 */
 }
@@ -492,8 +492,8 @@ html input[disabled] {
 /* line 482, ../sass/components/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -509,8 +509,8 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 2 */
 }
@@ -657,16 +657,16 @@ table {
   /* line 88, ../sass/components/_responsive.scss */
   .sidebar-first #content {
     float: left;
-    width: 66.66667%;
-    margin-left: 33.33333%;
-    margin-right: -100%;
+    width: 200%;
+    margin-left: 100%;
+    margin-right: -300%;
   }
   /* line 93, ../sass/components/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
-    width: 33.33333%;
+    width: 100%;
     margin-left: 0%;
-    margin-right: -33.33333%;
+    margin-right: -100%;
   }
 
   /**
@@ -680,16 +680,16 @@ table {
   /* line 103, ../sass/components/_responsive.scss */
   .sidebar-second #content {
     float: left;
-    width: 66.66667%;
+    width: 200%;
     margin-left: 0%;
-    margin-right: -66.66667%;
+    margin-right: -200%;
   }
   /* line 108, ../sass/components/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
-    width: 33.33333%;
-    margin-left: 66.66667%;
-    margin-right: -100%;
+    width: 100%;
+    margin-left: 200%;
+    margin-right: -300%;
   }
 
   /**
@@ -704,23 +704,23 @@ table {
   /* line 118, ../sass/components/_responsive.scss */
   .two-sidebars #content {
     float: left;
-    width: 66.66667%;
-    margin-left: 33.33333%;
-    margin-right: -100%;
+    width: 200%;
+    margin-left: 100%;
+    margin-right: -300%;
   }
   /* line 123, ../sass/components/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
-    width: 33.33333%;
+    width: 100%;
     margin-left: 0%;
-    margin-right: -33.33333%;
+    margin-right: -100%;
   }
   /* line 128, ../sass/components/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
-    width: 100%;
+    width: 300%;
     margin-left: 0%;
-    margin-right: -100%;
+    margin-right: -300%;
     padding-left: 0;
     padding-right: 0;
     clear: left;
@@ -742,24 +742,24 @@ table {
   /* line 138, ../sass/components/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: left;
-    width: 33.33333%;
+    width: 100%;
     margin-left: 0%;
-    margin-right: -33.33333%;
+    margin-right: -100%;
     clear: left;
   }
   /* line 143, ../sass/components/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: left;
-    width: 33.33333%;
-    margin-left: 33.33333%;
-    margin-right: -66.66667%;
+    width: 100%;
+    margin-left: 100%;
+    margin-right: -200%;
   }
   /* line 147, ../sass/components/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: left;
-    width: 33.33333%;
-    margin-left: 66.66667%;
-    margin-right: -100%;
+    width: 100%;
+    margin-left: 200%;
+    margin-right: -300%;
   }
 }
 /**
@@ -777,16 +777,16 @@ table {
   /* line 166, ../sass/components/_responsive.scss */
   .sidebar-first #content {
     float: left;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: -80%;
+    width: 300%;
+    margin-left: 100%;
+    margin-right: -400%;
   }
   /* line 171, ../sass/components/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
-    width: 40%;
+    width: 200%;
     margin-left: 0%;
-    margin-right: -40%;
+    margin-right: -200%;
   }
 
   /**
@@ -800,16 +800,16 @@ table {
   /* line 181, ../sass/components/_responsive.scss */
   .sidebar-second #content {
     float: left;
-    width: 80%;
+    width: 400%;
     margin-left: 0%;
-    margin-right: -80%;
+    margin-right: -400%;
   }
   /* line 186, ../sass/components/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
-    width: 20%;
-    margin-left: 80%;
-    margin-right: -100%;
+    width: 100%;
+    margin-left: 400%;
+    margin-right: -500%;
   }
 
   /**
@@ -824,23 +824,23 @@ table {
   /* line 196, ../sass/components/_responsive.scss */
   .two-sidebars #content {
     float: left;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: -80%;
+    width: 300%;
+    margin-left: 100%;
+    margin-right: -400%;
   }
   /* line 201, ../sass/components/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
-    width: 20%;
+    width: 100%;
     margin-left: 0%;
-    margin-right: -20%;
+    margin-right: -100%;
   }
   /* line 206, ../sass/components/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
-    width: 20%;
-    margin-left: 80%;
-    margin-right: -100%;
+    width: 100%;
+    margin-left: 400%;
+    margin-right: -500%;
   }
 }
 /**
@@ -1107,14 +1107,15 @@ table {
 /* Basic positioning styles shared by primary and secondary tabs. */
 /* line 264, ../sass/components/_misc.scss */
 .tabs-primary, .tabs-secondary {
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(100%, #bbbbbb), color-stop(100%, transparent));
-  background-image: -webkit-linear-gradient(bottom, #bbbbbb 1px, transparent 1px);
-  background-image: -moz-linear-gradient(bottom, #bbbbbb 1px, transparent 1px);
-  background-image: -o-linear-gradient(bottom, #bbbbbb 1px, transparent 1px);
-  background-image: linear-gradient(bottom, #bbbbbb 1px, transparent 1px);
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYmJiYmJiIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(100%, #bbbbbb), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -moz-linear-gradient(bottom, #bbbbbb 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: -webkit-linear-gradient(bottom, #bbbbbb 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: linear-gradient(to top, #bbbbbb 1px, rgba(0, 0, 0, 0) 1px);
   /* IE 9 and earlier don't understand gradients. */
   list-style: none;
-  border-bottom: 1px solid #bbbbbb \0/ie;
+  border-bottom: 1px solid #bbb \0/ie;
   margin: 1.5em 0;
   padding: 0 2px;
   white-space: nowrap;
@@ -1129,7 +1130,7 @@ table {
 }
 
 /* line 274, ../sass/components/_misc.scss */
-.tabs-primary__tab, .tabs-secondary__tab,
+.tabs-primary__tab, .tabs-primary__tab.is-active, .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   float: left;
   /* LTR */
@@ -1137,7 +1138,7 @@ table {
 }
 
 /* line 278, ../sass/components/_misc.scss */
-a.tabs-primary__tab-link, a.tabs-secondary__tab-link {
+a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   border: 1px solid #e9e9e9;
   border-right: 0;
   border-bottom: 0;
@@ -1155,16 +1156,16 @@ a.tabs-primary__tab-link, a.tabs-secondary__tab-link {
   -moz-border-radius-topright: 4px;
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
-  text-shadow: 1px 1px 0 white;
-  border: 1px solid #bbbbbb;
+  text-shadow: 1px 1px 0 #fff;
+  border: 1px solid #bbb;
   border-bottom-color: transparent;
   /* IE 9 and earlier don't understand gradients. */
   border-bottom: 0 \0/ie;
 }
 
 /* line 300, ../sass/components/_misc.scss */
-.is-active.tabs-primary__tab {
-  border-bottom-color: white;
+.tabs-primary__tab.is-active {
+  border-bottom-color: #fff;
 }
 
 /* line 306, ../sass/components/_misc.scss */
@@ -1175,9 +1176,9 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   -moz-border-radius-topright: 4px;
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
-  -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   color: #333;
   background-color: #dedede;
@@ -1195,11 +1196,13 @@ a.tabs-primary__tab-link:hover, a.tabs-primary__tab-link:focus {
 /* line 320, ../sass/components/_misc.scss */
 a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
   background-color: transparent;
+  *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE9E9E9', endColorstr='#00E9E9E9');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U5ZTllOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U5ZTllOSIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9e9), color-stop(100%, rgba(233, 233, 233, 0)));
-  background-image: -webkit-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
   background-image: -moz-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
-  background-image: -o-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
+  background-image: -webkit-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
   background-image: linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
   border-color: #fff;
 }
@@ -1220,16 +1223,14 @@ a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
 
 /* line 357, ../sass/components/_misc.scss */
 a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
-  -webkit-border-radius: 0.75em;
   -moz-border-radius: 0.75em;
-  -ms-border-radius: 0.75em;
-  -o-border-radius: 0.75em;
+  -webkit-border-radius: 0.75em;
   border-radius: 0.75em;
-  -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
-  text-shadow: 1px 1px 0 white;
+  text-shadow: 1px 1px 0 #fff;
   background-color: #f2f2f2;
   color: #666;
   padding: 0 .5em;
@@ -1244,7 +1245,7 @@ a.tabs-secondary__tab-link:hover, a.tabs-secondary__tab-link:focus {
 
 /* line 371, ../sass/components/_misc.scss */
 a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
-  text-shadow: 1px 1px 0 #333333;
+  text-shadow: 1px 1px 0 #333;
   background-color: #666;
   border-color: #000;
   color: #fff;
@@ -1498,9 +1499,8 @@ label.option {
 /* Buttons used by contrib modules like Media. */
 /* line 629, ../sass/components/_misc.scss */
 a.button {
-  -webkit-appearance: button;
   -moz-appearance: button;
-  appearance: button;
+  -webkit-appearance: button;
 }
 
 /* Password confirmation. */
@@ -1686,10 +1686,8 @@ tr.selected td {
   background: #ccc;
   border-color: #666;
   margin: 0 0.2em;
-  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 /* line 802, ../sass/components/_misc.scss */
@@ -1858,8 +1856,8 @@ tr.selected td {
   height: 100%;
   min-height: 195px;
   position: relative;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 /* line 25, ../sass/blocks/_footer.scss */
@@ -1907,7 +1905,7 @@ tr.selected td {
   background: -o-linear-gradient(top, #4a2c1d 0%, #442412 100%);
   background: -ms-linear-gradient(top, #4a2c1d 0%, #442412 100%);
   background: linear-gradient(to bottom, #4a2c1d 0%, #442412 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
 }
 /* line 10, ../sass/blocks/_breadcrumbs.scss */
 .breadcrumb a {
@@ -1967,7 +1965,7 @@ tr.selected td {
 /* line 13, ../sass/blocks/_tabs.scss */
 .ui-widget-content .ui-tabs-panel {
   color: #dccac0;
-  border: 1px solid #7a5745;
+  border: 1px solid #7A5745;
   background: #5A4032;
   font-size: 12px;
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
@@ -1977,7 +1975,7 @@ tr.selected td {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-  border: 1px solid #7a5745;
+  border: 1px solid #7A5745;
   border-bottom: none;
   background: url(../images/tabtop-bg.gif) repeat-x left top;
   border-radius: 0;
@@ -1993,7 +1991,7 @@ tr.selected td {
 .ui-state-default.ui-tabs-selected,
 .ui-widget-content .ui-state-default.ui-tabs-selected,
 .ui-widget-header .ui-state-default.ui-tabs-selected {
-  background: #503a2e url(../images/tabtop-active-r.gif) no-repeat right top;
+  background: #503A2E url(../images/tabtop-active-r.gif) no-repeat right top;
 }
 /* line 38, ../sass/blocks/_tabs.scss */
 .ui-state-default.ui-tabs-selected a,
@@ -2005,7 +2003,7 @@ tr.selected td {
 
 /* line 1, ../sass/pages/_base.scss */
 body {
-  color: #dccac0;
+  color: #DCCAC0;
 }
 
 /* line 5, ../sass/pages/_base.scss */
@@ -2020,44 +2018,44 @@ body {
 
 /* line 12, ../sass/pages/_base.scss */
 a {
-  color: #f8b150;
-  -webkit-transition: all 0.5s ease;
+  color: #F8B150;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 /* line 80, ../sass/settings/_mixins.scss */
 a:hover {
-  color: #dccac0;
+  color: #DCCAC0;
   text-decoration: underline;
 }
 
 /* line 16, ../sass/pages/_base.scss */
 button, .button, .form-submit {
   background-color: #71470e;
-  background-image: url('../images/../images/btn-bg.png?1431612107'), -webkit-gradient(linear, to bottom, to top, color-stop(0%, #662502), color-stop(100%, #71470e));
-  background-image: url('../images/../images/btn-bg.png?1431612107'), -webkit-linear-gradient(to bottom, #662502, #71470e);
-  background-image: url('../images/../images/btn-bg.png?1431612107'), -moz-linear-gradient(to bottom, #662502, #71470e);
-  background-image: url('../images/../images/btn-bg.png?1431612107'), -o-linear-gradient(to bottom, #662502, #71470e);
+  background-image: url('../images/../images/btn-bg.png?1431612107'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2MjUwMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzcxNDcwZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: url('../images/../images/btn-bg.png?1431612107'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #662502), color-stop(100%, #71470e));
+  background-image: url('../images/../images/btn-bg.png?1431612107'), -moz-linear-gradient(top, #662502, #71470e);
+  background-image: url('../images/../images/btn-bg.png?1431612107'), -webkit-linear-gradient(top, #662502, #71470e);
   background-image: url('../images/../images/btn-bg.png?1431612107'), linear-gradient(to bottom, #662502, #71470e);
   background-repeat: no-repeat;
   background-position: left center;
-  color: #dccac0;
+  color: #DCCAC0;
   border: 1px solid #4a2e1d;
   padding: 0 10px 0 35px;
   line-height: 22px;
-  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 /* line 68, ../sass/settings/_mixins.scss */
 button:hover, .button:hover, .form-submit:hover {
-  background-image: url('../images/../images/btn-bg.png?1431612107'), -webkit-gradient(linear, to bottom, to top, color-stop(0%, #71470e), color-stop(100%, #662502));
-  background-image: url('../images/../images/btn-bg.png?1431612107'), -webkit-linear-gradient(to bottom, #71470e, #662502);
-  background-image: url('../images/../images/btn-bg.png?1431612107'), -moz-linear-gradient(to bottom, #71470e, #662502);
-  background-image: url('../images/../images/btn-bg.png?1431612107'), -o-linear-gradient(to bottom, #71470e, #662502);
+  background-image: url('../images/../images/btn-bg.png?1431612107'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzcxNDcwZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzY2MjUwMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: url('../images/../images/btn-bg.png?1431612107'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #71470e), color-stop(100%, #662502));
+  background-image: url('../images/../images/btn-bg.png?1431612107'), -moz-linear-gradient(top, #71470e, #662502);
+  background-image: url('../images/../images/btn-bg.png?1431612107'), -webkit-linear-gradient(top, #71470e, #662502);
   background-image: url('../images/../images/btn-bg.png?1431612107'), linear-gradient(to bottom, #71470e, #662502);
 }
 
@@ -2089,12 +2087,12 @@ ul, li {
 
 /* line 43, ../sass/pages/_base.scss */
 fieldset {
-  border-color: #4f2f1d;
+  border-color: #4F2F1D;
 }
 
 /* line 47, ../sass/pages/_base.scss */
 .form-text, .form-textarea {
-  background: #4f2f1d;
+  background: #4F2F1D;
   border: #662502;
 }
 
@@ -2160,9 +2158,9 @@ fieldset {
   background: none;
   background-position: center 3px;
   background-repeat: no-repeat;
-  -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 /* line 104, ../sass/pages/_base.scss */
@@ -2200,8 +2198,8 @@ fieldset {
 }
 /* line 140, ../sass/pages/_base.scss */
 #page #main .column .content-container {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -2232,7 +2230,7 @@ fieldset {
 /* line 3, ../sass/pages/_school.scss */
 .school-page .panel-col-first {
   width: 68%;
-  border-top: 1px solid #4f2f1d;
+  border-top: 1px solid #4F2F1D;
 }
 /* line 7, ../sass/pages/_school.scss */
 .school-page .panel-col-first .inside {
@@ -2243,9 +2241,9 @@ fieldset {
   width: 32%;
   padding: 20px 20px 0 0;
   background: #4a2c1d;
-  border-top: 1px solid #4f2f1d;
-  -webkit-box-sizing: border-box;
+  border-top: 1px solid #4F2F1D;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 /* line 19, ../sass/pages/_school.scss */
@@ -2256,7 +2254,7 @@ fieldset {
 .school-page .panel-col-last .pane-views-panes {
   padding-bottom: 20px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #7a5745;
+  border-bottom: 1px solid #7A5745;
 }
 /* line 28, ../sass/pages/_school.scss */
 .school-page .panel-col-last .pane-views-panes:last-child {
@@ -2284,7 +2282,7 @@ fieldset {
 .school-page .view-news .views-row {
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #7a5745;
+  border-bottom: 1px solid #7A5745;
 }
 /* line 60, ../sass/pages/_school.scss */
 .school-page .view-news .views-row:last-child {
@@ -2302,7 +2300,7 @@ fieldset {
   background: #4F2F1D;
   border: 1px solid #2E190D;
   vertical-align: middle;
-  border: 1px solid #7a5745;
+  border: 1px solid #7A5745;
 }
 /* line 79, ../sass/pages/_school.scss */
 .school-page .view-news .views-field-title a {
@@ -2340,7 +2338,7 @@ fieldset {
   background: #4F2F1D;
   border: 1px solid #2E190D;
   vertical-align: middle;
-  border: 1px solid #7a5745;
+  border: 1px solid #7A5745;
 }
 /* line 118, ../sass/pages/_school.scss */
 .school-page .pane-video-panel-pane-2 {
@@ -2351,8 +2349,8 @@ fieldset {
   float: left;
   width: 50%;
   padding: 0 20px 20px 0;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 /* line 127, ../sass/pages/_school.scss */
@@ -2378,9 +2376,9 @@ fieldset {
   height: 80px;
   background: url(../images/play.png) no-repeat center;
   background-size: contain;
-  -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
   -o-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
 /* line 125, ../sass/settings/_mixins.scss */
@@ -2395,7 +2393,7 @@ fieldset {
   background: #4F2F1D;
   border: 1px solid #2E190D;
   vertical-align: middle;
-  border: 1px solid #7a5745;
+  border: 1px solid #7A5745;
 }
 /* line 140, ../sass/pages/_school.scss */
 .school-page .pane-video-panel-pane-2 .views-field-title {
@@ -2414,7 +2412,7 @@ fieldset {
 .view-schools .all-schools .views-row {
   margin: 0 -30px;
   padding: 10px 30px 25px;
-  border-bottom: 1px solid #4f2f1d;
+  border-bottom: 1px solid #4F2F1D;
 }
 /* line 161, ../sass/pages/_school.scss */
 .view-schools .all-schools .views-row:nth-child(odd) {
@@ -2425,7 +2423,7 @@ fieldset {
   background: -o-linear-gradient(top, #4a2c1d 0%, #442412 100%);
   background: -ms-linear-gradient(top, #4a2c1d 0%, #442412 100%);
   background: linear-gradient(to bottom, #4a2c1d 0%, #442412 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
 }
 /* line 166, ../sass/pages/_school.scss */
 .view-schools .all-schools .views-field-title {
@@ -2481,7 +2479,7 @@ fieldset {
 .view-school-wrapper.small .views-row {
   margin: 0 -10px 0 -30px;
   padding: 25px 30px 25px;
-  border-bottom: 1px solid #4f2f1d;
+  border-bottom: 1px solid #4F2F1D;
 }
 /* line 150, ../sass/settings/_mixins.scss */
 .view-school-wrapper.small .views-row:before, .view-school-wrapper.small .views-row:after {
@@ -2500,7 +2498,7 @@ fieldset {
   background: -o-linear-gradient(top, #4a2c1d 0%, #442412 100%);
   background: -ms-linear-gradient(top, #4a2c1d 0%, #442412 100%);
   background: linear-gradient(to bottom, #4a2c1d 0%, #442412 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
 }
 /* line 224, ../sass/pages/_school.scss */
 .view-school-wrapper.small .views-row:nth-child(even) .views-field-field-logo {
@@ -2569,7 +2567,7 @@ fieldset {
   background: #4F2F1D;
   border: 1px solid #2E190D;
   vertical-align: middle;
-  border: 1px solid #7a5745;
+  border: 1px solid #7A5745;
 }
 /* line 34, ../sass/pages/_photos.scss */
 .photo_gallery_wrapper .GI_TW_expander.opened {
@@ -2580,7 +2578,7 @@ fieldset {
   background: -o-linear-gradient(top, #4a2c1d 0%, #442412 100%);
   background: -ms-linear-gradient(top, #4a2c1d 0%, #442412 100%);
   background: linear-gradient(to bottom, #4a2c1d 0%, #442412 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
   border-bottom: 1px solid #4F2F1D;
   margin-left: -30px;
   margin-right: -30px;
@@ -2606,8 +2604,8 @@ fieldset {
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 0;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 /* line 64, ../sass/pages/_photos.scss */
@@ -2620,7 +2618,7 @@ fieldset {
 .view-video-wrapper .views-row {
   margin: 0 -30px;
   padding: 10px 30px 25px;
-  border-bottom: 1px solid #4f2f1d;
+  border-bottom: 1px solid #4F2F1D;
 }
 /* line 150, ../sass/settings/_mixins.scss */
 .view-video-wrapper .views-row:before, .view-video-wrapper .views-row:after {
@@ -2639,7 +2637,7 @@ fieldset {
   background: -o-linear-gradient(top, #4a2c1d 0%, #442412 100%);
   background: -ms-linear-gradient(top, #4a2c1d 0%, #442412 100%);
   background: linear-gradient(to bottom, #4a2c1d 0%, #442412 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
 }
 /* line 12, ../sass/pages/_video.scss */
 .view-video-wrapper .views-row:nth-child(even) .views-field-field-video {
@@ -2685,9 +2683,9 @@ fieldset {
   height: 80px;
   background: url(../images/play.png) no-repeat center;
   background-size: contain;
-  -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
   -o-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
 /* line 125, ../sass/settings/_mixins.scss */
@@ -2702,7 +2700,7 @@ fieldset {
   background: #4F2F1D;
   border: 1px solid #2E190D;
   vertical-align: middle;
-  border: 1px solid #7a5745;
+  border: 1px solid #7A5745;
 }
 /* line 44, ../sass/pages/_video.scss */
 .view-video-wrapper .colorbox:nth-child(even) {
@@ -2713,7 +2711,7 @@ fieldset {
 .view-news-wrapper .views-row {
   margin: 0 -30px;
   padding: 10px 30px 25px;
-  border-bottom: 1px solid #4f2f1d;
+  border-bottom: 1px solid #4F2F1D;
 }
 /* line 150, ../sass/settings/_mixins.scss */
 .view-news-wrapper .views-row:before, .view-news-wrapper .views-row:after {
@@ -2732,7 +2730,7 @@ fieldset {
   background: -o-linear-gradient(top, #4a2c1d 0%, #442412 100%);
   background: -ms-linear-gradient(top, #4a2c1d 0%, #442412 100%);
   background: linear-gradient(to bottom, #4a2c1d 0%, #442412 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
 }
 /* line 11, ../sass/pages/_news.scss */
 .view-news-wrapper .views-row:nth-child(even) .views-field-field-image {
@@ -2755,7 +2753,7 @@ fieldset {
   background: #4F2F1D;
   border: 1px solid #2E190D;
   vertical-align: middle;
-  border: 1px solid #7a5745;
+  border: 1px solid #7A5745;
 }
 /* line 33, ../sass/pages/_news.scss */
 .view-news-wrapper .views-field-title {
@@ -2821,8 +2819,8 @@ fieldset {
   padding: 20px 20px 20px 0;
   margin: 20px 0 20px -3px;
   vertical-align: top;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 /* line 23, ../sass/pages/_instructor.scss */
@@ -2851,7 +2849,7 @@ fieldset {
   background: #4F2F1D;
   border: 1px solid #2E190D;
   vertical-align: middle;
-  border: 1px solid #7a5745;
+  border: 1px solid #7A5745;
 }
 
 /*Instructors Block*/
@@ -2875,7 +2873,7 @@ fieldset {
   background: #4F2F1D;
   border: 1px solid #2E190D;
   vertical-align: middle;
-  border: 1px solid #7a5745;
+  border: 1px solid #7A5745;
 }
 /* line 71, ../sass/pages/_instructor.scss */
 .view-instructors-small .views-field-title {
@@ -2902,7 +2900,7 @@ fieldset {
 .front .panel-2col-bricks .panel-col-first .inside {
   margin: 0 10px .5em 0;
   padding-right: 10px;
-  border-right: 1px solid #7a5745;
+  border-right: 1px solid #7A5745;
 }
 /* line 18, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .panel-col-first h2.pane-title {
@@ -2912,8 +2910,8 @@ fieldset {
 .front .panel-2col-bricks .panel-col-last {
   width: 32%;
   padding: 20px 20px 0 0;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 /* line 28, ../sass/pages/_home.scss */
@@ -2924,7 +2922,7 @@ fieldset {
 .front .panel-2col-bricks .panel-col-last .pane-views {
   padding-bottom: 20px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #7a5745;
+  border-bottom: 1px solid #7A5745;
 }
 /* line 37, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .panel-col-last .pane-views:last-child {
@@ -2951,9 +2949,9 @@ fieldset {
   height: 80px;
   background: url(../images/play.png) no-repeat center;
   background-size: contain;
-  -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
   -o-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
 /* line 125, ../sass/settings/_mixins.scss */
@@ -2968,7 +2966,7 @@ fieldset {
   background: #4F2F1D;
   border: 1px solid #2E190D;
   vertical-align: middle;
-  border: 1px solid #7a5745;
+  border: 1px solid #7A5745;
 }
 /* line 53, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .view-photo {
@@ -2986,5 +2984,121 @@ fieldset {
 .front h2.pane-title {
   margin: 0;
 }
+/* line 70, ../sass/pages/_home.scss */
+.front .view-display-id-panel_pane_1 {
+  padding: 10px 30px 25px;
+}
+/* line 74, ../sass/pages/_home.scss */
+.front .view-news-wrapper.home {
+  border-bottom: 1px solid #7A5745;
+}
 
-/*@ sourceMappingURL=styles.css.map */
+/* line 4, ../sass/pages/_festivals.scss */
+.node-type-festival .view-video .views-field-field-video li {
+  float: left;
+  margin-right: 20px;
+}
+/* line 7, ../sass/pages/_festivals.scss */
+.node-type-festival .view-video .views-field-field-video li:last-child {
+  margin-right: 0;
+}
+/* line 14, ../sass/pages/_festivals.scss */
+.node-type-festival .views-field-field-video {
+  overflow: hidden;
+}
+/* line 17, ../sass/pages/_festivals.scss */
+.node-type-festival .views-field-field-video .colorbox {
+  position: relative;
+  display: block;
+  margin-bottom: 5px;
+  width: 278px;
+}
+/* line 110, ../sass/settings/_mixins.scss */
+.node-type-festival .views-field-field-video .colorbox:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -40px 0 0 -40px;
+  width: 80px;
+  height: 80px;
+  background: url(../images/play.png) no-repeat center;
+  background-size: contain;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+/* line 125, ../sass/settings/_mixins.scss */
+.node-type-festival .views-field-field-video .colorbox:hover:after {
+  width: 90px;
+  height: 90px;
+  margin: -45px 0 0 -45px;
+}
+/* line 132, ../sass/settings/_mixins.scss */
+.node-type-festival .views-field-field-video .colorbox img {
+  padding: 3px;
+  background: #4F2F1D;
+  border: 1px solid #2E190D;
+  vertical-align: middle;
+  border: 1px solid #7A5745;
+}
+
+/* line 2, ../sass/pages/_masterclass.scss */
+.node-type-master-class .views-field-field-photos {
+  clear: both;
+}
+/* line 6, ../sass/pages/_masterclass.scss */
+.node-type-master-class .views-field-field-video {
+  overflow: hidden;
+}
+/* line 9, ../sass/pages/_masterclass.scss */
+.node-type-master-class .views-field-field-video .colorbox {
+  position: relative;
+  display: block;
+  margin-bottom: 5px;
+  width: 278px;
+}
+/* line 110, ../sass/settings/_mixins.scss */
+.node-type-master-class .views-field-field-video .colorbox:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -40px 0 0 -40px;
+  width: 80px;
+  height: 80px;
+  background: url(../images/play.png) no-repeat center;
+  background-size: contain;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+/* line 125, ../sass/settings/_mixins.scss */
+.node-type-master-class .views-field-field-video .colorbox:hover:after {
+  width: 90px;
+  height: 90px;
+  margin: -45px 0 0 -45px;
+}
+/* line 132, ../sass/settings/_mixins.scss */
+.node-type-master-class .views-field-field-video .colorbox img {
+  padding: 3px;
+  background: #4F2F1D;
+  border: 1px solid #2E190D;
+  vertical-align: middle;
+  border: 1px solid #7A5745;
+}
+/* line 16, ../sass/pages/_masterclass.scss */
+.node-type-master-class .views-field-field-video .item-list li {
+  float: left;
+  margin-right: 20px;
+}
+/* line 19, ../sass/pages/_masterclass.scss */
+.node-type-master-class .views-field-field-video .item-list li:last-child {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

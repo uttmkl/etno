@@ -1,0 +1,23 @@
+.node-type-festival {
+    .view-video {
+        .views-field-field-video {
+            li {
+                float: left;
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .views-field-field-video {
+        overflow: hidden;
+
+        .colorbox {
+            @include video-icon();
+            margin-bottom: 5px;
+            width: 278px;
+        }
+    }
+}

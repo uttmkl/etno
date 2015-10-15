@@ -1,0 +1,25 @@
+.node-type-master-class {
+    .views-field-field-photos {
+        clear: both;
+    }
+
+    .views-field-field-video {
+        overflow: hidden;
+
+        .colorbox {
+            @include video-icon();
+            margin-bottom: 5px;
+            width: 278px;
+        }
+
+        .item-list {
+            li {
+                float: left;
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
