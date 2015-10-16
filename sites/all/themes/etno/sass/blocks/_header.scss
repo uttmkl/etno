@@ -1,5 +1,5 @@
 .header {
-  height: 386px;
+  height: 256px;
   background: url("../images/header-bg.gif") repeat-x;
   .container-inner {
     &:after {
@@ -14,13 +14,14 @@
     .header__logo {
       position: relative;
       left:-90px;
+        display: none;
     }
     .header__name-and-slogan {
       position: absolute;
       max-width: 475px;
       height: initial;
       width: 100%;
-      top: 230px;
+      top: 25px;
       left: 10px;
       z-index: 10;
       h1 {

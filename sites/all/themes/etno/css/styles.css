@@ -1784,7 +1784,7 @@ tr.selected td {
 }
 /* line 1, ../sass/blocks/_header.scss */
 .header {
-  height: 386px;
+  height: 256px;
   background: url("../images/header-bg.gif") repeat-x;
 }
 /* line 5, ../sass/blocks/_header.scss */
@@ -1801,23 +1801,24 @@ tr.selected td {
 .header .container-inner .header__logo {
   position: relative;
   left: -90px;
+  display: none;
 }
-/* line 18, ../sass/blocks/_header.scss */
+/* line 19, ../sass/blocks/_header.scss */
 .header .container-inner .header__name-and-slogan {
   position: absolute;
   max-width: 475px;
   height: initial;
   width: 100%;
-  top: 230px;
+  top: 25px;
   left: 10px;
   z-index: 10;
 }
-/* line 26, ../sass/blocks/_header.scss */
+/* line 27, ../sass/blocks/_header.scss */
 .header .container-inner .header__name-and-slogan h1 {
   line-height: normal;
   font-weight: normal;
 }
-/* line 29, ../sass/blocks/_header.scss */
+/* line 30, ../sass/blocks/_header.scss */
 .header .container-inner .header__name-and-slogan h1 a {
   text-decoration: none;
   font-variant: small-caps;
@@ -1828,7 +1829,7 @@ tr.selected td {
   outline: none;
 }
 
-/* line 43, ../sass/blocks/_header.scss */
+/* line 44, ../sass/blocks/_header.scss */
 .header-enter {
   text-align: right;
 }
