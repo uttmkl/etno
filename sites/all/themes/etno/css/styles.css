@@ -587,7 +587,7 @@ table {
 .region-bottom {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1000px;
+  max-width: 1240px;
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
@@ -1851,7 +1851,7 @@ tr.selected td {
 }
 /* line 15, ../sass/blocks/_footer.scss */
 #footer .wrapper {
-  max-width: 1000px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 20px 30px;
   height: 100%;
@@ -2101,7 +2101,7 @@ fieldset {
 .container-inner {
   position: relative;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1240px;
   height: 100%;
 }
 
@@ -2179,7 +2179,7 @@ fieldset {
 }
 /* line 122, ../sass/pages/_base.scss */
 #page #main {
-  max-width: 1000px;
+  max-width: 1240px;
   padding: 0;
   margin: 0 auto;
 }
@@ -2933,7 +2933,15 @@ fieldset {
 .front .panel-2col-bricks .panel-col-last .pane-views h2 {
   margin: 5px 0;
 }
-/* line 47, ../sass/pages/_home.scss */
+/* line 46, ../sass/pages/_home.scss */
+.front .panel-2col-bricks .panel-col-last .views-field-field-video {
+  overflow: hidden;
+}
+/* line 48, ../sass/pages/_home.scss */
+.front .panel-2col-bricks .panel-col-last .views-field-field-video .field-content {
+  float: left;
+}
+/* line 51, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .panel-col-last .views-field-field-video a {
   position: relative;
   display: block;
@@ -2969,27 +2977,27 @@ fieldset {
   vertical-align: middle;
   border: 1px solid #7A5745;
 }
-/* line 53, ../sass/pages/_home.scss */
+/* line 57, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .view-photo {
   padding: 0 5px 0 30px;
 }
-/* line 57, ../sass/pages/_home.scss */
+/* line 61, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .photo_gallery_wrapper li {
   margin: 15px 15px 15px 0;
 }
-/* line 60, ../sass/pages/_home.scss */
+/* line 64, ../sass/pages/_home.scss */
 .front .panel-2col-bricks .photo_gallery_wrapper li:nth-child(even) {
   margin-left: 15px;
 }
-/* line 66, ../sass/pages/_home.scss */
+/* line 70, ../sass/pages/_home.scss */
 .front h2.pane-title {
   margin: 0;
 }
-/* line 70, ../sass/pages/_home.scss */
+/* line 74, ../sass/pages/_home.scss */
 .front .view-display-id-panel_pane_1 {
   padding: 10px 30px 25px;
 }
-/* line 74, ../sass/pages/_home.scss */
+/* line 78, ../sass/pages/_home.scss */
 .front .view-news-wrapper.home {
   border-bottom: 1px solid #7A5745;
 }

@@ -44,6 +44,10 @@
       }
 
       .views-field-field-video {
+        overflow: hidden;
+        .field-content {
+          float: left;
+        }
         a {
           @include video-icon();
         }
