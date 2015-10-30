@@ -104,7 +104,7 @@ audio:not([controls]) {
 html {
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
   /* 1 */
-  font-size: 75%;
+  font-size: 100%;
   /* 3 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -186,7 +186,7 @@ h2 {
 /* line 195, ../sass/components/_normalize.scss */
 h3 {
   font-size: 1.17em;
-  line-height: 2.5641em;
+  line-height: 1.28205em;
   margin-top: 1.28205em;
   margin-bottom: 1.28205em;
 }
@@ -379,18 +379,18 @@ fieldset {
   margin: 0 2px;
   /* Apply borders and padding that keep the vertical rhythm. */
   border-color: #c0c0c0;
-  border-top-width: 0.08333em;
+  border-top-width: 0.0625em;
   border-top-style: solid;
-  padding-top: 0.44167em;
-  border-bottom-width: 0.08333em;
+  padding-top: 0.4625em;
+  border-bottom-width: 0.0625em;
   border-bottom-style: solid;
-  padding-bottom: 0.89167em;
-  border-left-width: 0.08333em;
+  padding-bottom: 0.9125em;
+  border-left-width: 0.0625em;
   border-left-style: solid;
-  padding-left: 0.89167em;
-  border-right-width: 0.08333em;
+  padding-left: 0.9125em;
+  border-right-width: 0.0625em;
   border-right-style: solid;
-  padding-right: 0.89167em;
+  padding-right: 0.9125em;
 }
 
 /**
@@ -1730,7 +1730,7 @@ tr.selected td {
   #content a[href]:after {
     content: " (" attr(href) ")";
     font-weight: normal;
-    font-size: 12px;
+    font-size: 16px;
   }
   /* line 34, ../sass/components/_print.scss */
   #content a[href^="javascript:"]:after,
@@ -2076,7 +2076,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
 
 /* line 33, ../sass/pages/_base.scss */
 h2 {
-  line-height: 24px;
+  line-height: 31px;
 }
 
 /* line 37, ../sass/pages/_base.scss */
