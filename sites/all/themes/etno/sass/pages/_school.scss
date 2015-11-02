@@ -33,9 +33,9 @@
         margin: 5px 0;
       }
 
-		.pager {
-			margin-top: 5px;
-		}
+      .pager {
+        margin-top: 5px;
+      }
     }
   }
 
@@ -206,43 +206,43 @@
 .view-school-wrapper {
   &.small {
     margin-left: 30px;
-	  margin-bottom: 25px;
+    margin-bottom: 25px;
 
     h2.pane-title {
       margin: 10px 0;
     }
 
     .views-row {
-		@include clearfix();
-		margin: 0 -10px 0 -30px;
-		padding: 25px 30px 25px;
-		border-bottom: $border;
+      @include clearfix();
+      margin: 0 -10px 0 -30px;
+      padding: 25px 30px 25px;
+      border-bottom: $border;
 
       &:nth-child(even) {
-		  @include gradient();
+        @include gradient();
 
-		  .views-field-field-logo {
-			  float: right;
-			  margin-right: 0;
-			  margin-left: 25px;
-		  }
+        .views-field-field-logo {
+          float: right;
+          margin-right: 0;
+          margin-left: 25px;
+        }
       }
 
-		&:last-child {
-			border-width: 3px;
-		}
+      &:last-child {
+        border-width: 3px;
+      }
 
-		.views-field-field-logo {
-			float: left;
-			margin-right: 25px;
-			margin-bottom: 15px;
-		}
+      .views-field-field-logo {
+        float: left;
+        margin-right: 25px;
+        margin-bottom: 15px;
+      }
 
       h3 {
         margin-top: 0;
         margin-bottom: 10px;
         line-height: 18px;
-		  font-size: 1.5em;
+        font-size: 1.5em;
       }
 
       .views-more-link {

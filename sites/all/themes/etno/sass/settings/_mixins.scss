@@ -38,24 +38,29 @@
 
 @mixin media($media) {
   @if $media == small {
-    @media only screen and (max-width: $small-breakpoint) { @content; }
-  }
-  @else if $media == medium {
-    @media only screen and (max-width: $medium-breakpoint) { @content; }
-  }
-  @else if $media == large {
-    @media only screen and (max-width: $large-breakpoint) and (min-width: $medium-breakpoint + 1) { @content; }
-  }
-  @else if $media == tablet {
-    @media only screen and (max-width: $tablet-breakpoint) and (min-width: $medium-breakpoint) { @content; }
+    @media only screen and (max-width: $small-breakpoint) {
+      @content;
+    }
+  } @else if $media == medium {
+    @media only screen and (max-width: $medium-breakpoint) {
+      @content;
+    }
+  } @else if $media == large {
+    @media only screen and (max-width: $large-breakpoint) and (min-width: $medium-breakpoint + 1) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media only screen and (max-width: $tablet-breakpoint) and (min-width: $medium-breakpoint) {
+      @content;
+    }
   }
 }
 
 @mixin button() {
   background-color: #71470e;
   @include background-image(
-          image-url("../images/btn-bg.png"),
-          linear-gradient(to bottom, #662502, #71470e)
+    image-url("../images/btn-bg.png"),
+    linear-gradient(to bottom, #662502, #71470e)
   );
   background-repeat: no-repeat;
   background-position: left center;
@@ -67,8 +72,8 @@
 
   &:hover {
     @include background-image(
-            image-url("../images/btn-bg.png"),
-            linear-gradient(to bottom, #71470e, #662502)
+      image-url("../images/btn-bg.png"),
+      linear-gradient(to bottom, #71470e, #662502)
     );
   }
 }
@@ -136,14 +141,14 @@
 }
 
 @mixin gradient() {
-  background: rgba(74,44,29,1);
-  background: -moz-linear-gradient(top, rgba(74,44,29,1) 0%, rgba(68,36,18,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(74,44,29,1)), color-stop(100%, rgba(68,36,18,1)));
-  background: -webkit-linear-gradient(top, rgba(74,44,29,1) 0%, rgba(68,36,18,1) 100%);
-  background: -o-linear-gradient(top, rgba(74,44,29,1) 0%, rgba(68,36,18,1) 100%);
-  background: -ms-linear-gradient(top, rgba(74,44,29,1) 0%, rgba(68,36,18,1) 100%);
-  background: linear-gradient(to bottom, rgba(74,44,29,1) 0%, rgba(68,36,18,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0 );
+  background: rgba(74, 44, 29, 1);
+  background: -moz-linear-gradient(top, rgba(74, 44, 29, 1) 0%, rgba(68, 36, 18, 1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(74, 44, 29, 1)), color-stop(100%, rgba(68, 36, 18, 1)));
+  background: -webkit-linear-gradient(top, rgba(74, 44, 29, 1) 0%, rgba(68, 36, 18, 1) 100%);
+  background: -o-linear-gradient(top, rgba(74, 44, 29, 1) 0%, rgba(68, 36, 18, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(74, 44, 29, 1) 0%, rgba(68, 36, 18, 1) 100%);
+  background: linear-gradient(to bottom, rgba(74, 44, 29, 1) 0%, rgba(68, 36, 18, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0);
 }
 
 @mixin clearfix() {

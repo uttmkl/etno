@@ -11,9 +11,9 @@
 
 // We are going to create a 980px wide, 5 column grid with 20px gutters between
 // columns (applied as 10px of left/right padding on each column).
-$zen-column-count:  5;
-$zen-gutter-width:  20px;
-$zen-grid-width:    980px;
+$zen-column-count: 5;
+$zen-gutter-width: 20px;
+$zen-grid-width: 980px;
 
 // If you need IE6/7 support for box-sizing: border-box (default), see _init.scss
 // Since the same CSS unit for grid width and gutter width are set here
@@ -28,52 +28,54 @@ $zen-auto-include-item-base: false;
 // Suppress this section of CSS for RTL layouts since it contains no LTR-specific styles.
 @if $zen-reverse-all-floats == false {
 
-/**
- * Center the page.
- *
- * If you want to make the page a fixed width and centered in the viewport,
- * this is the standards-compliant way to do that.
- */
-#page,
-.region-bottom {
-  margin-left: auto;
-  margin-right: auto;
-  width: $zen-grid-width;
+  /**
+   * Center the page.
+   *
+   * If you want to make the page a fixed width and centered in the viewport,
+   * this is the standards-compliant way to do that.
+   */
+  #page,
+  .region-bottom {
+    margin-left: auto;
+    margin-right: auto;
+    width: $zen-grid-width;
+  }
+
+  /* Apply the shared properties of grid items in a single, efficient ruleset. */
+  #header,
+  #content,
+  #navigation,
+  .region-sidebar-first,
+  .region-sidebar-second,
+  #footer {
+    // See the note about $zen-auto-include-item-base above.
+    @include zen-grid-item-base();
+  }
+
+  /* Containers for grid items and flow items. */
+  #header,
+  #main,
+  #footer {
+    @include zen-grid-container();
+  }
+
+  /* Navigation bar */
+  #main {
+    /* Move all the children of #main down to make room. */
+    padding-top: $nav-height;
+    position: relative;
+  }
+  #navigation {
+    /* Move the navbar up inside #main's padding. */
+    position: absolute;
+    top: 0;
+    height: $nav-height;
+    width: $zen-grid-width - $zen-gutter-width;
+  }
+
 }
 
-/* Apply the shared properties of grid items in a single, efficient ruleset. */
-#header,
-#content,
-#navigation,
-.region-sidebar-first,
-.region-sidebar-second,
-#footer {
-  // See the note about $zen-auto-include-item-base above.
-  @include zen-grid-item-base();
-}
-
-/* Containers for grid items and flow items. */
-#header,
-#main,
-#footer {
-  @include zen-grid-container();
-}
-
-/* Navigation bar */
-#main {
-  /* Move all the children of #main down to make room. */
-  padding-top: $nav-height;
-  position: relative;
-}
-#navigation {
-  /* Move the navbar up inside #main's padding. */
-  position: absolute;
-  top: 0;
-  height: $nav-height;
-  width: $zen-grid-width - $zen-gutter-width;
-}
-
-} // End of @if $zen-reverse-all-floats == true
+// End of @if $zen-reverse-all-floats == true
 
 /**
  * The layout when there is only one sidebar, the left one.

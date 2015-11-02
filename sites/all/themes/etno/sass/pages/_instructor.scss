@@ -1,23 +1,23 @@
 .page-node {
-	.view-instructor-wrapper {
-		.views-row {
-			display: block;
-			width: 100%;
-			padding: 20px;
-			margin: 0;
-		}
-	}
+  .view-instructor-wrapper {
+    .views-row {
+      display: block;
+      width: 100%;
+      padding: 20px;
+      margin: 0;
+    }
+  }
 }
 
 .view-instructor-wrapper {
   @include clearfix();
 
   .views-row {
-	  display: inline-block;
-	  width: 49%;
-	  padding: 20px 20px 20px 0;
-	  margin: 20px 0 20px -3px;
-	  vertical-align: top;
+    display: inline-block;
+    width: 49%;
+    padding: 20px 20px 20px 0;
+    margin: 20px 0 20px -3px;
+    vertical-align: top;
     @include box-sizing(border-box);
 
     &:nth-child(even) {

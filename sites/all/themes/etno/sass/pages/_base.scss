@@ -5,6 +5,7 @@ body {
 ::selection {
   background: $selection;
 }
+
 ::-moz-selection {
   background: $selection;
 }
@@ -38,6 +39,10 @@ ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.hide {
+  display: none;
 }
 
 fieldset {
