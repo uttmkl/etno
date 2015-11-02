@@ -1832,6 +1832,8 @@ tr.selected td {
 /* line 44, ../sass/blocks/_header.scss */
 .header-enter {
   text-align: right;
+  position: relative;
+  z-index: 1;
 }
 
 /* line 1, ../sass/blocks/_footer.scss */
