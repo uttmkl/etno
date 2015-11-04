@@ -164,6 +164,12 @@ fieldset {
   clear: both;
 }
 
+.views-field-field-vk,
+.views-field-field-facebook,
+.views-field-field-google,
+.views-field-field-twitter {
+  display: inline-block;
+}
 .social-link {
   width: 16px;
   height: 16px;

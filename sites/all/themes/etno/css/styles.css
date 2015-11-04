@@ -2229,25 +2229,33 @@ fieldset {
 }
 
 /* line 167, ../sass/pages/_base.scss */
+.views-field-field-vk,
+.views-field-field-facebook,
+.views-field-field-google,
+.views-field-field-twitter {
+  display: inline-block;
+}
+
+/* line 173, ../sass/pages/_base.scss */
 .social-link {
   width: 16px;
   height: 16px;
   display: inline-block;
   margin: -10px 15px 10px 0;
 }
-/* line 172, ../sass/pages/_base.scss */
+/* line 178, ../sass/pages/_base.scss */
 .social-link.vk {
   background: url(../images/social/16/vk.png) no-repeat;
 }
-/* line 175, ../sass/pages/_base.scss */
+/* line 181, ../sass/pages/_base.scss */
 .social-link.facebook {
   background: url(../images/social/16/facebook.png) no-repeat;
 }
-/* line 178, ../sass/pages/_base.scss */
+/* line 184, ../sass/pages/_base.scss */
 .social-link.google {
   background: url(../images/social/16/googleplus.png) no-repeat;
 }
-/* line 181, ../sass/pages/_base.scss */
+/* line 187, ../sass/pages/_base.scss */
 .social-link.twitter {
   background: url(../images/social/16/twitter.png) no-repeat;
 }
