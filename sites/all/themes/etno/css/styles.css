@@ -2267,12 +2267,12 @@ fieldset {
 /* line 197, ../sass/pages/_base.scss */
 .views-field-body .field-content ul {
   margin-left: 30px;
-  margin-bottom: 10px;
 }
-/* line 201, ../sass/pages/_base.scss */
+/* line 200, ../sass/pages/_base.scss */
 .views-field-body .field-content li {
   list-style: circle;
   margin-left: 30px;
+  margin-bottom: 10px;
 }
 
 /* line 1, ../sass/pages/_school.scss */
