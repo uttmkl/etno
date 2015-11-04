@@ -196,6 +196,14 @@
       }
     }
 
+    .views-field-field-vk,
+    .views-field-field-facebook,
+    .views-field-field-google,
+    .views-field-field-twitter {
+      display: block;
+      float: left;
+    }
+
     .views-field-field-styles,
     .views-field-field-city {
       float: left;
