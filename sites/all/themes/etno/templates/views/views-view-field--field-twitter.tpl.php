@@ -23,5 +23,5 @@
  */
 ?>
 <?php if ($output): ?>
-  <a href="<?php print $output; ?>" class="social-link vk" target="_blank"></a>
+  <a href="<?php print $output; ?>" class="social-link twitter" target="_blank"></a>
 <?php endif; ?>
