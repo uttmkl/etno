@@ -1973,8 +1973,12 @@ tr.selected td {
   font-size: 12px;
   font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
 }
+/* line 20, ../sass/blocks/_tabs.scss */
+.ui-widget-content a {
+  color: #F8B150;
+}
 
-/* line 22, ../sass/blocks/_tabs.scss */
+/* line 25, ../sass/blocks/_tabs.scss */
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
@@ -1983,20 +1987,20 @@ tr.selected td {
   background: #63462c url(../images/tabtop-bg.gif) repeat-x left top;
   border-radius: 0;
 }
-/* line 30, ../sass/blocks/_tabs.scss */
+/* line 33, ../sass/blocks/_tabs.scss */
 .ui-state-default a,
 .ui-widget-content .ui-state-default a,
 .ui-widget-header .ui-state-default a {
   color: #cccccc;
   outline: 0;
 }
-/* line 35, ../sass/blocks/_tabs.scss */
+/* line 38, ../sass/blocks/_tabs.scss */
 .ui-state-default.ui-tabs-selected,
 .ui-widget-content .ui-state-default.ui-tabs-selected,
 .ui-widget-header .ui-state-default.ui-tabs-selected {
   background: #503A2E url(../images/tabtop-active-r.gif) no-repeat right top;
 }
-/* line 38, ../sass/blocks/_tabs.scss */
+/* line 41, ../sass/blocks/_tabs.scss */
 .ui-state-default.ui-tabs-selected a,
 .ui-widget-content .ui-state-default.ui-tabs-selected a,
 .ui-widget-header .ui-state-default.ui-tabs-selected a {

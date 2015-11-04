@@ -17,6 +17,9 @@
     font-size: 12px;
     font-family: $font-body;
   }
+  a {
+    color: $link_color;
+  }
 }
 
 .ui-state-default,
