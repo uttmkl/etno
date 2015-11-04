@@ -2428,7 +2428,7 @@ fieldset {
   position: relative;
   display: block;
   margin-bottom: 5px;
-  width: 278px;
+  width: 360px;
 }
 /* line 118, ../sass/settings/_mixins.scss */
 .school-page .pane-video-panel-pane-2 .views-field-field-video .colorbox:after {
@@ -2986,6 +2986,10 @@ fieldset {
 /* line 74, ../sass/pages/_instructor.scss */
 .view-instructors-small .views-field-title a {
   text-decoration: none;
+}
+/* line 79, ../sass/pages/_instructor.scss */
+.view-instructors-small .views-field-field-five-words {
+  font-size: 12px;
 }
 
 /* line 2, ../sass/pages/_home.scss */
