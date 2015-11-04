@@ -2500,22 +2500,27 @@ fieldset {
   font-size: 12px;
   max-width: 50%;
 }
+/* line 207, ../sass/pages/_school.scss */
+.view-schools .all-schools .views-field-field-styles:before {
+  content: '';
+  clear: both;
+}
 
-/* line 209, ../sass/pages/_school.scss */
+/* line 215, ../sass/pages/_school.scss */
 .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 0;
 }
 
-/* line 214, ../sass/pages/_school.scss */
+/* line 220, ../sass/pages/_school.scss */
 .view-school-wrapper.small {
   margin-left: 30px;
   margin-bottom: 25px;
 }
-/* line 218, ../sass/pages/_school.scss */
+/* line 224, ../sass/pages/_school.scss */
 .view-school-wrapper.small h2.pane-title {
   margin: 10px 0;
 }
-/* line 222, ../sass/pages/_school.scss */
+/* line 228, ../sass/pages/_school.scss */
 .view-school-wrapper.small .views-row {
   margin: 0 -10px 0 -30px;
   padding: 25px 30px 25px;
@@ -2529,7 +2534,7 @@ fieldset {
   height: 0;
   clear: both;
 }
-/* line 228, ../sass/pages/_school.scss */
+/* line 234, ../sass/pages/_school.scss */
 .view-school-wrapper.small .views-row:nth-child(even) {
   background: #4a2c1d;
   background: -moz-linear-gradient(top, #4a2c1d 0%, #442412 100%);
@@ -2540,36 +2545,36 @@ fieldset {
   background: linear-gradient(to bottom, #4a2c1d 0%, #442412 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a2c1d', endColorstr='#442412', GradientType=0);
 }
-/* line 231, ../sass/pages/_school.scss */
+/* line 237, ../sass/pages/_school.scss */
 .view-school-wrapper.small .views-row:nth-child(even) .views-field-field-logo {
   float: right;
   margin-right: 0;
   margin-left: 25px;
 }
-/* line 238, ../sass/pages/_school.scss */
+/* line 244, ../sass/pages/_school.scss */
 .view-school-wrapper.small .views-row:last-child {
   border-width: 3px;
 }
-/* line 242, ../sass/pages/_school.scss */
+/* line 248, ../sass/pages/_school.scss */
 .view-school-wrapper.small .views-row .views-field-field-logo {
   float: left;
   margin-right: 25px;
   margin-bottom: 15px;
 }
-/* line 248, ../sass/pages/_school.scss */
+/* line 254, ../sass/pages/_school.scss */
 .view-school-wrapper.small .views-row h3 {
   margin-top: 0;
   margin-bottom: 10px;
   line-height: 18px;
   font-size: 1.5em;
 }
-/* line 255, ../sass/pages/_school.scss */
+/* line 261, ../sass/pages/_school.scss */
 .view-school-wrapper.small .views-row .views-more-link {
   display: block;
   position: relative;
   top: -15px;
 }
-/* line 261, ../sass/pages/_school.scss */
+/* line 267, ../sass/pages/_school.scss */
 .view-school-wrapper.small .views-row .views-field-field-styles,
 .view-school-wrapper.small .views-row .views-field-field-city {
   width: 45%;
