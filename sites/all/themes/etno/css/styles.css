@@ -1980,7 +1980,7 @@ tr.selected td {
 .ui-widget-header .ui-state-default {
   border: 1px solid #7A5745;
   border-bottom: none;
-  background: url(../images/tabtop-bg.gif) repeat-x left top;
+  background: #63462c url(../images/tabtop-bg.gif) repeat-x left top;
   border-radius: 0;
 }
 /* line 30, ../sass/blocks/_tabs.scss */
@@ -2226,6 +2226,30 @@ fieldset {
   font-size: 16px;
   margin: 20px 0 0;
   clear: both;
+}
+
+/* line 167, ../sass/pages/_base.scss */
+.social-link {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin: -10px 15px 10px 0;
+}
+/* line 172, ../sass/pages/_base.scss */
+.social-link.vk {
+  background: url(../images/social/16/vk.png) no-repeat;
+}
+/* line 175, ../sass/pages/_base.scss */
+.social-link.facebook {
+  background: url(../images/social/16/facebook.png) no-repeat;
+}
+/* line 178, ../sass/pages/_base.scss */
+.social-link.google {
+  background: url(../images/social/16/googleplus.png) no-repeat;
+}
+/* line 181, ../sass/pages/_base.scss */
+.social-link.twitter {
+  background: url(../images/social/16/twitter.png) no-repeat;
 }
 
 /* line 1, ../sass/pages/_school.scss */

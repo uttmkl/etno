@@ -163,3 +163,22 @@ fieldset {
   margin: 20px 0 0;
   clear: both;
 }
+
+.social-link {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin: -10px 15px 10px 0;
+  &.vk {
+    background: url(../images/social/16/vk.png) no-repeat;
+  }
+  &.facebook {
+    background: url(../images/social/16/facebook.png) no-repeat;
+  }
+  &.google {
+    background: url(../images/social/16/googleplus.png) no-repeat;
+  }
+  &.twitter {
+    background: url(../images/social/16/twitter.png) no-repeat;
+  }
+}
