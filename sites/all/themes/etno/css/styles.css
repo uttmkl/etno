@@ -2260,6 +2260,19 @@ fieldset {
   background: url(../images/social/16/twitter.png) no-repeat;
 }
 
+/* line 194, ../sass/pages/_base.scss */
+.views-field-body .field-content p {
+  text-indent: 15px;
+}
+/* line 197, ../sass/pages/_base.scss */
+.views-field-body .field-content ul {
+  margin-left: 30px;
+}
+/* line 200, ../sass/pages/_base.scss */
+.views-field-body .field-content li {
+  list-style: circle;
+}
+
 /* line 1, ../sass/pages/_school.scss */
 .school-page {
   /*Node*/
