@@ -1120,7 +1120,7 @@ table {
   padding: 0 2px;
   white-space: nowrap;
 }
-/* line 157, ../sass/settings/_mixins.scss */
+/* line 158, ../sass/settings/_mixins.scss */
 .tabs-primary:before, .tabs-secondary:before, .tabs-primary:after, .tabs-secondary:after {
   content: " ";
   visibility: hidden;
@@ -2362,6 +2362,7 @@ fieldset {
   vertical-align: middle;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   border: 1px solid #7A5745;
 }
 /* line 79, ../sass/pages/_school.scss */
@@ -2402,6 +2403,7 @@ fieldset {
   vertical-align: middle;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   border: 1px solid #7A5745;
 }
 /* line 118, ../sass/pages/_school.scss */
@@ -2428,7 +2430,7 @@ fieldset {
   margin-bottom: 5px;
   width: 278px;
 }
-/* line 117, ../sass/settings/_mixins.scss */
+/* line 118, ../sass/settings/_mixins.scss */
 .school-page .pane-video-panel-pane-2 .views-field-field-video .colorbox:after {
   content: '';
   display: block;
@@ -2445,13 +2447,13 @@ fieldset {
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
-/* line 132, ../sass/settings/_mixins.scss */
+/* line 133, ../sass/settings/_mixins.scss */
 .school-page .pane-video-panel-pane-2 .views-field-field-video .colorbox:hover:after {
   width: 90px;
   height: 90px;
   margin: -45px 0 0 -45px;
 }
-/* line 139, ../sass/settings/_mixins.scss */
+/* line 140, ../sass/settings/_mixins.scss */
 .school-page .pane-video-panel-pane-2 .views-field-field-video .colorbox img {
   padding: 3px;
   background: #4F2F1D;
@@ -2459,6 +2461,7 @@ fieldset {
   vertical-align: middle;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   border: 1px solid #7A5745;
 }
 /* line 140, ../sass/pages/_school.scss */
@@ -2515,6 +2518,7 @@ fieldset {
   vertical-align: middle;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
 }
 /* line 194, ../sass/pages/_school.scss */
 .view-schools .all-schools .views-field-body p {
@@ -2561,7 +2565,7 @@ fieldset {
   padding: 25px 30px 25px;
   border-bottom: 1px solid #4F2F1D;
 }
-/* line 157, ../sass/settings/_mixins.scss */
+/* line 158, ../sass/settings/_mixins.scss */
 .view-school-wrapper.small .views-row:before, .view-school-wrapper.small .views-row:after {
   content: " ";
   visibility: hidden;
@@ -2654,6 +2658,7 @@ fieldset {
   vertical-align: middle;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   border: 1px solid #7A5745;
 }
 /* line 40, ../sass/pages/_photos.scss */
@@ -2707,7 +2712,7 @@ fieldset {
   padding: 10px 30px 25px;
   border-bottom: 1px solid #4F2F1D;
 }
-/* line 157, ../sass/settings/_mixins.scss */
+/* line 158, ../sass/settings/_mixins.scss */
 .view-video-wrapper .views-row:before, .view-video-wrapper .views-row:after {
   content: " ";
   visibility: hidden;
@@ -2758,7 +2763,7 @@ fieldset {
   position: relative;
   display: block;
 }
-/* line 117, ../sass/settings/_mixins.scss */
+/* line 118, ../sass/settings/_mixins.scss */
 .view-video-wrapper .colorbox:after {
   content: '';
   display: block;
@@ -2775,13 +2780,13 @@ fieldset {
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
-/* line 132, ../sass/settings/_mixins.scss */
+/* line 133, ../sass/settings/_mixins.scss */
 .view-video-wrapper .colorbox:hover:after {
   width: 90px;
   height: 90px;
   margin: -45px 0 0 -45px;
 }
-/* line 139, ../sass/settings/_mixins.scss */
+/* line 140, ../sass/settings/_mixins.scss */
 .view-video-wrapper .colorbox img {
   padding: 3px;
   background: #4F2F1D;
@@ -2789,6 +2794,7 @@ fieldset {
   vertical-align: middle;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   border: 1px solid #7A5745;
 }
 /* line 44, ../sass/pages/_video.scss */
@@ -2802,7 +2808,7 @@ fieldset {
   padding: 10px 30px 25px;
   border-bottom: 1px solid #4F2F1D;
 }
-/* line 157, ../sass/settings/_mixins.scss */
+/* line 158, ../sass/settings/_mixins.scss */
 .view-news-wrapper .views-row:before, .view-news-wrapper .views-row:after {
   content: " ";
   visibility: hidden;
@@ -2844,6 +2850,7 @@ fieldset {
   vertical-align: middle;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   border: 1px solid #7A5745;
 }
 /* line 33, ../sass/pages/_news.scss */
@@ -2895,7 +2902,7 @@ fieldset {
   margin: 0;
 }
 
-/* line 157, ../sass/settings/_mixins.scss */
+/* line 158, ../sass/settings/_mixins.scss */
 .view-instructor-wrapper:before, .view-instructor-wrapper:after {
   content: " ";
   visibility: hidden;
@@ -2942,6 +2949,7 @@ fieldset {
   vertical-align: middle;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   border: 1px solid #7A5745;
 }
 
@@ -2968,6 +2976,7 @@ fieldset {
   vertical-align: middle;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   border: 1px solid #7A5745;
 }
 /* line 71, ../sass/pages/_instructor.scss */
@@ -3040,7 +3049,7 @@ fieldset {
   position: relative;
   display: block;
 }
-/* line 117, ../sass/settings/_mixins.scss */
+/* line 118, ../sass/settings/_mixins.scss */
 .front .panel-2col-bricks .panel-col-last .views-field-field-video a:after {
   content: '';
   display: block;
@@ -3057,13 +3066,13 @@ fieldset {
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
-/* line 132, ../sass/settings/_mixins.scss */
+/* line 133, ../sass/settings/_mixins.scss */
 .front .panel-2col-bricks .panel-col-last .views-field-field-video a:hover:after {
   width: 90px;
   height: 90px;
   margin: -45px 0 0 -45px;
 }
-/* line 139, ../sass/settings/_mixins.scss */
+/* line 140, ../sass/settings/_mixins.scss */
 .front .panel-2col-bricks .panel-col-last .views-field-field-video a img {
   padding: 3px;
   background: #4F2F1D;
@@ -3071,6 +3080,7 @@ fieldset {
   vertical-align: middle;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   border: 1px solid #7A5745;
 }
 /* line 57, ../sass/pages/_home.scss */
@@ -3118,7 +3128,7 @@ fieldset {
   margin-bottom: 5px;
   width: 278px;
 }
-/* line 117, ../sass/settings/_mixins.scss */
+/* line 118, ../sass/settings/_mixins.scss */
 .node-type-festival .views-field-field-video .colorbox:after {
   content: '';
   display: block;
@@ -3135,13 +3145,13 @@ fieldset {
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
-/* line 132, ../sass/settings/_mixins.scss */
+/* line 133, ../sass/settings/_mixins.scss */
 .node-type-festival .views-field-field-video .colorbox:hover:after {
   width: 90px;
   height: 90px;
   margin: -45px 0 0 -45px;
 }
-/* line 139, ../sass/settings/_mixins.scss */
+/* line 140, ../sass/settings/_mixins.scss */
 .node-type-festival .views-field-field-video .colorbox img {
   padding: 3px;
   background: #4F2F1D;
@@ -3149,6 +3159,7 @@ fieldset {
   vertical-align: middle;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   border: 1px solid #7A5745;
 }
 
@@ -3167,7 +3178,7 @@ fieldset {
   margin-bottom: 5px;
   width: 278px;
 }
-/* line 117, ../sass/settings/_mixins.scss */
+/* line 118, ../sass/settings/_mixins.scss */
 .node-type-master-class .views-field-field-video .colorbox:after {
   content: '';
   display: block;
@@ -3184,13 +3195,13 @@ fieldset {
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
-/* line 132, ../sass/settings/_mixins.scss */
+/* line 133, ../sass/settings/_mixins.scss */
 .node-type-master-class .views-field-field-video .colorbox:hover:after {
   width: 90px;
   height: 90px;
   margin: -45px 0 0 -45px;
 }
-/* line 139, ../sass/settings/_mixins.scss */
+/* line 140, ../sass/settings/_mixins.scss */
 .node-type-master-class .views-field-field-video .colorbox img {
   padding: 3px;
   background: #4F2F1D;
@@ -3198,6 +3209,7 @@ fieldset {
   vertical-align: middle;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   border: 1px solid #7A5745;
 }
 /* line 16, ../sass/pages/_masterclass.scss */
