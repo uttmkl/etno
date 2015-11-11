@@ -3174,13 +3174,19 @@ fieldset {
 /* line 6, ../sass/pages/_masterclass.scss */
 .node-type-master-class .views-field-field-video {
   overflow: hidden;
+  margin-top: 30px;
+  margin-left: 16px;
 }
-/* line 9, ../sass/pages/_masterclass.scss */
+/* line 10, ../sass/pages/_masterclass.scss */
+.node-type-master-class .views-field-field-video .views-label-field-video {
+  display: block;
+  margin-bottom: 12px;
+}
+/* line 14, ../sass/pages/_masterclass.scss */
 .node-type-master-class .views-field-field-video .colorbox {
   position: relative;
   display: block;
   margin-bottom: 5px;
-  width: 278px;
 }
 /* line 118, ../sass/settings/_mixins.scss */
 .node-type-master-class .views-field-field-video .colorbox:after {
@@ -3216,32 +3222,23 @@ fieldset {
   box-sizing: border-box;
   border: 1px solid #7A5745;
 }
-/* line 16, ../sass/pages/_masterclass.scss */
+/* line 20, ../sass/pages/_masterclass.scss */
 .node-type-master-class .views-field-field-video .item-list li {
   float: left;
   margin-right: 20px;
 }
-/* line 19, ../sass/pages/_masterclass.scss */
+/* line 23, ../sass/pages/_masterclass.scss */
 .node-type-master-class .views-field-field-video .item-list li:last-child {
   margin-right: 0;
 }
-/* line 25, ../sass/pages/_masterclass.scss */
+/* line 29, ../sass/pages/_masterclass.scss */
 .node-type-master-class .views-field-field-photos {
   padding-top: 30px;
 }
-/* line 27, ../sass/pages/_masterclass.scss */
+/* line 31, ../sass/pages/_masterclass.scss */
 .node-type-master-class .views-field-field-photos .views-label-field-photos {
   display: block;
   margin-left: 16px;
-}
-/* line 33, ../sass/pages/_masterclass.scss */
-.node-type-master-class .views-field-field-video {
-  margin-top: 30px;
-  margin-left: 16px;
-}
-/* line 36, ../sass/pages/_masterclass.scss */
-.node-type-master-class .views-field-field-video .views-label-field-video {
-  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */
