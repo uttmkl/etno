@@ -45,14 +45,23 @@
   </script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1726997437529567',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
     var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
+    if (d.getElementById(id)) {return;}
     js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.5&appId=1633736743558919";
+    js.src = "//connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+  }(document, 'script', 'facebook-jssdk'));
+</script>
   <?php if ($skip_link_text && $skip_link_anchor): ?>
     <p id="skip-link">
       <a href="#<?php print $skip_link_anchor; ?>" class="element-invisible element-focusable"><?php print $skip_link_text; ?></a>
