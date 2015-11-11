@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * @file
  * Normalize.css is intended to be used as an alternative to CSS resets.
@@ -3113,8 +3112,8 @@ fieldset {
   border-bottom: 1px solid #7A5745;
 }
 /* line 82, ../sass/pages/_home.scss */
-.front .fb_iframe_widgetб
-.contextual-links-region.pane-block-3 {
+.front .fb_iframe_widget,
+.front .contextual-links-region.pane-block-3 {
   margin-top: 20px;
 }
 
