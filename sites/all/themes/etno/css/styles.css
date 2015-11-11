@@ -3227,21 +3227,21 @@ fieldset {
 }
 /* line 25, ../sass/pages/_masterclass.scss */
 .node-type-master-class .views-field-field-photos {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 /* line 27, ../sass/pages/_masterclass.scss */
 .node-type-master-class .views-field-field-photos .views-label-field-photos {
   display: block;
-  margin-left: 20px;
+  margin-left: 16px;
 }
 /* line 33, ../sass/pages/_masterclass.scss */
 .node-type-master-class .views-field-field-video {
   margin-top: 30px;
+  margin-left: 16px;
 }
-/* line 35, ../sass/pages/_masterclass.scss */
+/* line 36, ../sass/pages/_masterclass.scss */
 .node-type-master-class .views-field-field-video .views-label-field-video {
   display: block;
-  margin-left: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
