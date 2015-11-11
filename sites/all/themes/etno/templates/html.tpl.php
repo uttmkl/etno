@@ -43,6 +43,7 @@
   <script type="text/javascript">
     VK.Widgets.Group("vk_groups", {mode: 0, width: "356", height: "245", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 29725038);
   </script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 <div id="fb-root"></div>
