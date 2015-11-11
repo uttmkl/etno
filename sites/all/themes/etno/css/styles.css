@@ -3225,5 +3225,23 @@ fieldset {
 .node-type-master-class .views-field-field-video .item-list li:last-child {
   margin-right: 0;
 }
+/* line 25, ../sass/pages/_masterclass.scss */
+.node-type-master-class .views-field-field-video .views-field-field-photos {
+  margin-top: 30px;
+}
+/* line 27, ../sass/pages/_masterclass.scss */
+.node-type-master-class .views-field-field-video .views-field-field-photos .views-label-field-photos {
+  display: block;
+  margin-left: 20px;
+}
+/* line 33, ../sass/pages/_masterclass.scss */
+.node-type-master-class .views-field-field-video .views-field-field-video {
+  margin-top: 30px;
+}
+/* line 35, ../sass/pages/_masterclass.scss */
+.node-type-master-class .views-field-field-video .views-field-field-video .views-label-field-video {
+  display: block;
+  margin-left: 20px;
+}
 
 /*# sourceMappingURL=styles.css.map */
