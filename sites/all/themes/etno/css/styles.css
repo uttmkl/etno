@@ -3111,6 +3111,10 @@ fieldset {
 .front .view-news-wrapper.home {
   border-bottom: 1px solid #7A5745;
 }
+/* line 82, ../sass/pages/_home.scss */
+.front .fb_iframe_widget {
+  margin-top: 20px;
+}
 
 /* line 4, ../sass/pages/_festivals.scss */
 .node-type-festival .view-video .views-field-field-video li {
