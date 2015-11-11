@@ -2633,12 +2633,7 @@ fieldset {
   margin-bottom: 0;
 }
 
-/* line 17, ../sass/pages/_photos.scss */
-.page-photos .photo_gallery_wrapper li {
-  width: 260px;
-}
-
-/* line 23, ../sass/pages/_photos.scss */
+/* line 16, ../sass/pages/_photos.scss */
 .photo_gallery_wrapper li {
   display: inline-block;
   margin: 15px;
@@ -2646,11 +2641,11 @@ fieldset {
   width: 360px;
   position: relative;
 }
-/* line 30, ../sass/pages/_photos.scss */
+/* line 23, ../sass/pages/_photos.scss */
 .photo_gallery_wrapper li:hover {
   cursor: pointer;
 }
-/* line 34, ../sass/pages/_photos.scss */
+/* line 27, ../sass/pages/_photos.scss */
 .photo_gallery_wrapper li img {
   padding: 3px;
   background: #4F2F1D;
@@ -2661,7 +2656,7 @@ fieldset {
   box-sizing: border-box;
   border: 1px solid #7A5745;
 }
-/* line 40, ../sass/pages/_photos.scss */
+/* line 33, ../sass/pages/_photos.scss */
 .photo_gallery_wrapper .GI_TW_expander.opened {
   background: #4a2c1d;
   background: -moz-linear-gradient(top, #4a2c1d 0%, #442412 100%);
@@ -2678,20 +2673,20 @@ fieldset {
   padding-left: 30px;
   padding-right: 30px;
 }
-/* line 49, ../sass/pages/_photos.scss */
+/* line 42, ../sass/pages/_photos.scss */
 .photo_gallery_wrapper .GI_TW_expander.opened img {
   border: none;
 }
-/* line 55, ../sass/pages/_photos.scss */
+/* line 48, ../sass/pages/_photos.scss */
 .photo_gallery_wrapper .GI_TW_expander .GI_TW_pointer {
   border-bottom-color: #4a2c1d;
   margin-left: 20px;
 }
-/* line 60, ../sass/pages/_photos.scss */
+/* line 53, ../sass/pages/_photos.scss */
 .photo_gallery_wrapper .GI_TW_expander .GI_TW_expander-inner {
   width: 100%;
 }
-/* line 64, ../sass/pages/_photos.scss */
+/* line 57, ../sass/pages/_photos.scss */
 .photo_gallery_wrapper .GI_TW_expander .GI_TW_fullimg {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -2700,7 +2695,7 @@ fieldset {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 70, ../sass/pages/_photos.scss */
+/* line 63, ../sass/pages/_photos.scss */
 .photo_gallery_wrapper .GI_TW_expander .GI_TW_fullimg img {
   height: 100%;
   vertical-align: top;
