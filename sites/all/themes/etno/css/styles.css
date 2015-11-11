@@ -2486,7 +2486,7 @@ fieldset {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-  height: 350px;
+  height: 360px;
 }
 /* line 166, ../sass/pages/_school.scss */
 .view-schools .all-schools .views-row.views-row-even {
