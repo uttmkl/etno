@@ -30,13 +30,14 @@ Drupal.behaviors.etno = {
       initForms: function() {
         if ($('form.node-instructor-form, form.node-news-form, form.node-photos-form, form.node-video-form').size() > 0) {
           setSchool();
+          $('.form-item-field-is-federation-new-und').hide();
         }
 
         function setSchool() {
           var schoolId = $("#page").data("schoolid");
 
           if (schoolId) {
-            $('#edit-field-school-und option[value=' + schoolId + ']').attr('selected', 'selected');
+            $('#edit-field-school-und option[value=' + schoolId + ']').attr('selected', 'selected').hide();
           }
         }
       },
