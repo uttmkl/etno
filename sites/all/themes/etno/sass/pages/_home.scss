@@ -88,10 +88,26 @@
 .pane-views-schools-public-block {
   .views-row {
     clear: both;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: $light_border;
+  }
+  .views-field-title,
+  .views-field-delete-node {
+    font-size: 14px;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
   .views-field-title {
     float: left;
     width: 80%;
+    padding-right: 15px;
+    box-sizing: border-box;
   }
   .views-field-delete-node {
     float: right;
