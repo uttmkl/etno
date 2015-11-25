@@ -84,3 +84,17 @@
     margin-top: 20px;
   }
 }
+
+.pane-views-schools-public-block {
+  .views-row {
+    clear: both;
+  }
+  .views-field-title {
+    float: left;
+    width: 80%;
+  }
+  .views-field-delete-node {
+    float: right;
+    width: 20%;
+  }
+}
