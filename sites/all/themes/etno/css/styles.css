@@ -3121,29 +3121,33 @@ fieldset {
   padding-bottom: 15px;
   border-bottom: 1px solid #7A5745;
 }
-/* line 96, ../sass/pages/_home.scss */
+/* line 95, ../sass/pages/_home.scss */
+.pane-views-schools-public-block .views-row:last-child {
+  border-bottom: none;
+}
+/* line 99, ../sass/pages/_home.scss */
 .pane-views-schools-public-block .views-field-title,
 .pane-views-schools-public-block .views-field-delete-node {
   font-size: 14px;
 }
-/* line 99, ../sass/pages/_home.scss */
+/* line 102, ../sass/pages/_home.scss */
 .pane-views-schools-public-block .views-field-title a,
 .pane-views-schools-public-block .views-field-delete-node a {
   text-decoration: none;
 }
-/* line 101, ../sass/pages/_home.scss */
+/* line 104, ../sass/pages/_home.scss */
 .pane-views-schools-public-block .views-field-title a:hover,
 .pane-views-schools-public-block .views-field-delete-node a:hover {
   text-decoration: underline;
 }
-/* line 106, ../sass/pages/_home.scss */
+/* line 109, ../sass/pages/_home.scss */
 .pane-views-schools-public-block .views-field-title {
   float: left;
   width: 80%;
   padding-right: 15px;
   box-sizing: border-box;
 }
-/* line 112, ../sass/pages/_home.scss */
+/* line 115, ../sass/pages/_home.scss */
 .pane-views-schools-public-block .views-field-delete-node {
   float: right;
   width: 20%;
