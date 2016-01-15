@@ -1,5 +1,8 @@
 body {
   color: $main_color;
+  @include respond(mobile) {
+    overflow-x: hidden;
+  }
 }
 
 ::selection {
@@ -66,28 +69,42 @@ fieldset {
   padding-bottom: 15px;
   #navigation {
     margin-top: -46px;
-    background: url("../images/mainnav-bg.png");
+    background: url("../images/mainnav-bg.png") repeat-x;
     height: 46px;
     position: relative;
     bottom: 0;
     z-index: 9;
     width: 100%;
+    @include respond(mobile) {
+      overflow: initial;
+      height: auto;
+      padding: 0;
+    }
     .main-menu {
       outline: none;
     }
     #main-menu {
       display: block;
       height: 46px;
+      @include respond(mobile) {
+        height: auto;
+      }
     }
     .container-inner {
       ul {
-        &.inline {
-          display: inline-block;
-        }
         margin: 0 0 0 5px;
         padding: 0 0 0 2px;
         position: relative;
         background: url("../images/mainnav-sep.gif") no-repeat left 3px;
+        &.inline {
+          display: inline-block;
+          @include respond(mobile) {
+            display: none;
+            margin: 0;
+            padding: 0;
+            border-bottom: $border;
+          }
+        }
         li {
           padding: 0 2px 0 0;
           margin: 0;
@@ -104,6 +121,9 @@ fieldset {
             background-position: center 3px;
             background-repeat: no-repeat;
             @include transition(all 0.5s ease);
+            @include respond(tablet) {
+              padding: 0 10px;
+            }
           }
           &:hover {
             a {
@@ -136,6 +156,9 @@ fieldset {
 
       &.column-main {
         padding: 10px 30px;
+        @include respond(mobile) {
+          padding: 10px;
+        }
       }
 
       &.sidebar {
@@ -156,6 +179,21 @@ fieldset {
 .comments__form-title,
 .comment__title {
   font-size: 32px;
+  @include respond(mobile) {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  @include respond(mobile) {
+    font-size: 21px;
+  }
+}
+
+h3 {
+  @include respond(mobile) {
+    font-size: 18px;
+  }
 }
 
 .link-to-all {
@@ -193,6 +231,12 @@ fieldset {
   .field-content {
     p {
       text-indent: 30px;
+      @include respond(tablet) {
+        text-indent: 10px;
+      }
+      @include respond(mobile) {
+        text-indent: 10px;
+      }
     }
     ul {
       margin-left: 15px;

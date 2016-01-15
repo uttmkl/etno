@@ -35,6 +35,9 @@
           font-weight: normal;
           font-size: 36px;
           outline: none;
+          @include respond(mobile) {
+            font-size: 21px;
+          }
         }
       }
     }
@@ -45,4 +48,15 @@
   text-align: right;
   position: relative;
   z-index: 1;
+}
+
+.mobile-menu {
+  display: none;
+  @include respond(mobile) {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    text-decoration: none;
+    margin-left: 10px;
+  }
 }

@@ -5,6 +5,7 @@
   line-height: 40px;
   border-top: 1px solid #4F2F1D;
   border-bottom: 1px solid #4F2F1D;
+  overflow: hidden;
   @include gradient();
 
   a {

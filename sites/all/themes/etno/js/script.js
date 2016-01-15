@@ -21,6 +21,7 @@ Drupal.behaviors.etno = {
         this.initTabs();
         this.initForms();
         this.initGallery();
+        this.initMobileMenu();
       },
 
       initTabs: function() {
@@ -77,6 +78,13 @@ Drupal.behaviors.etno = {
             });
           });
         }
+      },
+
+      initMobileMenu: function() {
+          $('.mobile-menu').on('click', function() {
+              $(this).toggleClass('active');
+              $('#page #navigation .container-inner ul.inline').slideToggle();
+          });
       }
     };
 

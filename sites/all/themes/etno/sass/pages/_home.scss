@@ -5,18 +5,32 @@
 
   .panel-2col-bricks {
     margin: 0 -30px;
+    @include respond(mobile) {
+      margin: 0;
+    }
 
     .panel-col-first {
       width: 68%;
+      @include respond(mobile) {
+        width: 100%;
+      }
 
       .inside {
         margin: 0 10px .5em 0;
         padding-right: 10px;
         border-right: $light_border;
+        @include respond(mobile) {
+          margin: 0;
+          padding: 0;
+          border: none;
+        }
       }
 
       h2.pane-title {
         margin-left: 30px;
+        @include respond(mobile) {
+          margin-left: 0;
+        }
       }
     }
 
@@ -24,9 +38,16 @@
       width: 32%;
       padding: 20px 20px 0 0;
       @include box-sizing(border-box);
+      @include respond(mobile) {
+        width: 100%;
+        padding-right: 0;
+      }
 
       .inside {
         margin-left: 20px;
+        @include respond(mobile) {
+          margin-left: 0;
+        }
       }
 
       .pane-views {
@@ -47,6 +68,9 @@
         overflow: hidden;
         .field-content {
           float: left;
+          @include respond(mobile) {
+            float: none;
+          }
         }
         a {
           @include video-icon();
@@ -56,13 +80,32 @@
 
     .view-photo {
       padding: 0 5px 0 30px;
+      @include respond(mobile) {
+        padding-left: 0;
+      }
     }
 
     .photo_gallery_wrapper li {
       margin: 15px 15px 15px 0;
+      @include respond(mobile) {
+        margin: 10px 0;
+      }
 
       &:nth-child(even) {
         margin-left: 15px;
+        @include respond(tablet) {
+          margin-left: 3%;
+          margin-right: 0;
+        }
+        @include respond(mobile) {
+          margin-left: 0;
+        }
+      }
+      &:nth-child(odd) {
+        @include respond(tablet) {
+          margin-right: 3%;
+          margin-left: 0;
+        }
       }
     }
   }
@@ -73,6 +116,9 @@
 
   .view-display-id-panel_pane_1 {
     padding: 10px 30px 25px;
+    @include respond(mobile) {
+      padding: 0;
+    }
   }
 
   .view-news-wrapper.home {

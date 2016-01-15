@@ -4,13 +4,25 @@
     margin: 0 -30px;
     padding: 10px 30px 25px;
     border-bottom: $border;
+    @include respond(mobile) {
+      margin: 0;
+      padding: 10px 0;
+    }
 
     &:nth-child(even) {
       @include gradient();
+      @include respond(mobile) {
+        @include no-gradient();
+      }
 
       .views-field-field-image {
         float: right;
         margin: 0 15px 0 30px;
+        @include respond(mobile) {
+          float: none;
+          margin: 10px 0;
+          width: 100%;
+        }
       }
     }
 
@@ -22,6 +34,11 @@
       float: left;
       margin: 0 30px 0 15px;
       position: relative;
+      @include respond(mobile) {
+        float: none;
+        margin: 10px 0;
+        width: 100%;
+      }
     }
 
     img {
@@ -59,6 +76,9 @@
     .views-row {
       &:nth-child(even) .views-field-field-image {
         margin: 0 15px 0 20px;
+        @include respond(mobile) {
+          margin: 0;
+        }
       }
 
       .views-field-field-image {
@@ -74,5 +94,10 @@
     float: left;
     margin: 0 30px 0 15px;
     position: relative;
+    @include respond(mobile) {
+      margin: 0;
+      float: none;
+      width: 100%;
+    }
   }
 }

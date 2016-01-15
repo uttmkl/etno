@@ -5,13 +5,24 @@
     margin: 0 -30px;
     padding: 10px 30px 25px;
     border-bottom: $border;
+    @include respond(mobile) {
+      padding-right: 0;
+      padding-left: 0;
+      margin: 0;
+    }
 
     &:nth-child(even) {
       @include gradient();
+      @include respond(mobile) {
+        @include no-gradient();
+      }
 
       .views-field-field-video {
         float: right;
         margin-left: 20px;
+        @include respond(mobile) {
+          margin-left: 0;
+        }
 
         a {
           margin-right: 0;
@@ -32,6 +43,9 @@
       font-size: 24px;
       line-height: 32px;
       margin: 0 0 10px;
+      @include respond(mobile) {
+        font-size: 21px;
+      }
     }
   }
 
@@ -41,8 +55,27 @@
     float: left;
     @include video-icon();
 
+    @include respond(mobile) {
+      width: 100%;
+      margin: 10px 0;
+    }
+
     &:nth-child(even) {
       margin-right: 0;
+    }
+  }
+  iframe {
+    @include respond(mobile) {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.embedded-video {
+  iframe {
+    @include respond(mobile) {
+      width: 100%;
+      height: auto;
     }
   }
 }

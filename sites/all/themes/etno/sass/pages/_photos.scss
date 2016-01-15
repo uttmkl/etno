@@ -13,12 +13,23 @@
   }
 }
 .photo_gallery_wrapper {
+  ul {
+    font-size: 0;
+  }
   li {
     display: inline-block;
     margin: 15px;
     vertical-align: top;
     width: 360px;
     position: relative;
+    @include respond(tablet) {
+      width: 45%;
+      box-sizing: border-box;
+    }
+    @include respond(mobile) {
+      width: 100%;
+      margin: 10px 0;
+    }
 
     &:hover {
       cursor: pointer;
