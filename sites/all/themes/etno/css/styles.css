@@ -2972,7 +2972,6 @@ fieldset {
 }
 /* line 74, ../sass/pages/_photos.scss */
 .photo_gallery_wrapper .GI_TW_expander .GI_TW_fullimg img {
-  width: 100%;
   vertical-align: top;
 }
 
