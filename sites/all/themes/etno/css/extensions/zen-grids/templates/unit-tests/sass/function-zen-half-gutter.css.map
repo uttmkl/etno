@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;AAOA,qBAAsB;;EAEpB,YAAY,EAAE,IAAiB;;EAI/B,YAAY,EAAE,IAAiB;;EAG/B,YAAY,EC6RE,GAAiB;;ED1R/B,YAAY,EC0RE,KAAiB;;EDvR/B,YAAY,EAAE,GAAqB;;EAGnC,YAAY,EAAE,GAAqB;;EAGnC,YAAY,EAAE,GAA4B;;EAI1C,YAAY,EAAE,GAAqB;;EAGnC,YAAY,EAAE,GAA2B",
+"sources": ["../../../../../../sass-extensions/zen-grids/templates/unit-tests/sass/function-zen-half-gutter.scss","../../../../../../sass-extensions/zen-grids/stylesheets/zen/_grids.scss"],
+"names": [],
+"file": "function-zen-half-gutter.css"
+}
